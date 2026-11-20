@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>政大 EMBA 戈22 行事曆</title>
-<meta name="description" content="政大 EMBA 戈22 挑戰隊：行事曆與每週訓練時間">
+<title>政大 EMBA 戈22 目標與行事曆</title>
+<meta name="description" content="政大 EMBA 戈22 挑戰隊：團隊目標、行事曆與每週訓練時間">
 <style>
 :root{--ink:#2B1F14;--sub:#5A4A3A;--mute:#8A7A66;--line:#D9CDB8;--paper:#F6F1E7;--card:#FFFDF8;--red:#A33B2B;--org:#C8652B;--blue:#3C6E8F;--green:#2E7D4F;--sand:#EFE6D6;--hot:#FFF3D6}
 *{box-sizing:border-box}
@@ -43,15 +43,35 @@ a{color:var(--blue)}
 .yt{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
 .yt svg{flex:0 0 auto}
 footer{margin-top:34px;padding-top:10px;border-top:1px solid var(--line);color:var(--mute);font-size:13px}
-@media (max-width:560px){h1{font-size:25px}.keys{grid-template-columns:1fr}.key{display:flex;align-items:baseline;gap:10px}.key .d{font-size:21px}.month{grid-template-columns:60px 1fr}}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.nav a{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:14px;text-decoration:none;color:var(--ink)}
+.goal{background:var(--ink);color:var(--paper);border-radius:10px;padding:12px 14px;margin:10px 0}
+.goal b{color:#FFE873}
+.aw{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:10px 0}
+.aw>div,.grp>div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;border-top:5px solid var(--org)}
+.aw h3,.grp h3{margin:0 0 4px;font-size:17px}
+.aw p,.grp p{margin:3px 0;font-size:14.5px}
+.aw .t{font-weight:700}
+.aw .b{border-top-color:var(--blue)}.aw .g{border-top-color:var(--green)}.aw .r{border-top-color:var(--red)}
+.grp{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0}
+.grp .a{border-top-color:var(--org)}.grp .b{border-top-color:var(--blue)}.grp .c{border-top-color:var(--red)}
+.grp .say{font-weight:700;margin:2px 0 6px}
+.grp .a .say{color:var(--org)}.grp .b .say{color:var(--blue)}.grp .c .say{color:var(--red)}
+.grp dl{margin:0;font-size:14.5px}
+.grp dt{color:var(--mute);font-size:12.5px;margin-top:6px}
+.grp dd{margin:0}
+@media (max-width:760px){.grp{grid-template-columns:1fr}}
+@media (max-width:560px){.aw{grid-template-columns:1fr}h1{font-size:25px}.keys{grid-template-columns:1fr}.key{display:flex;align-items:baseline;gap:10px}.key .d{font-size:21px}.month{grid-template-columns:60px 1fr}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <p class="kicker">政大 EMBA 戈壁挑戰隊</p>
-<h1>戈22 行事曆與每週訓練時間</h1>
+<h1>戈22 目標、行事曆與每週訓練時間</h1>
 <p class="slogan">做自己的英雄，做團隊的靠山</p>
 <p class="upd">更新日 2026-11-20 ｜ 日期如有調整，以這一頁與隊上通知為準</p>
+
+<nav class="nav"><a href="#goal">團隊目標</a><a href="#groups">三個組別</a><a href="#week">每週訓練時間</a><a href="#cal">行事曆</a><a href="#video">教學影片</a></nav>
 
 <div class="keys">
 <div class="key"><div class="d">12/5（六）</div><div class="w">週六團練開始，06:00</div></div>
@@ -59,7 +79,27 @@ footer{margin-top:34px;padding-top:10px;border-top:1px solid var(--line);color:v
 <div class="key o"><div class="d">9/27</div><div class="w">出征</div></div>
 </div>
 
-<h2>每週訓練時間</h2>
+<h2 id="goal">團隊目標：四大獎再抱回</h2>
+<div class="goal">一個目標、四個獎。每一次訓練、每一場活動，都對得到其中一個獎；<b>四個獎要全隊一起拿</b>，不是只靠競賽組。</div>
+<div class="aw">
+<div><h3>卓越獎</h3><p class="t">競賽組 A 團隊成績進前 20 名</p><p>每天取隊上第六人的成績，三個競賽日合計。目標是第六人每公里 5 分 45 秒，連續三天；保底是奮進獎。</p></div>
+<div class="b"><h3>沙克爾頓獎</h3><p class="t">A、B 隊在關門時間內全員完賽</p><p>不丟下任何一個人。出發前做完體檢與平板測試；挑戰組分組走，每組一起出發、一起到達。</p></div>
+<div class="g"><h3>文化風範獎</h3><p class="t">零黃牌，讓別人看見政大的樣子</p><p>由各校領隊、大會、裁判與公益大使投票。賽道上每一個人的言行都算在裡面。</p></div>
+<div class="r"><h3>傳承超越獎</h3><p class="t">參賽人數超過上一屆，目標 100 人</p><p>A、B、C 三組合計人數超過上屆就拿得到；滿 100 人另有最佳組織獎。多一個人來，就多一分把握。</p></div>
+</div>
+
+<h2 id="groups">三個組別：找到適合你的一組</h2>
+<div class="grp">
+<div class="a"><h3>競賽組 A</h3><p class="say">做自己的英雄，做團隊的靠山</p><p>責任與突破：為學校爭名次的一組。</p>
+<dl><dt>走多少</dt><dd>四天約 120 公里，計名次</dd><dt>誰能報</dt><dd>正式註冊學員，沒跑過 A 隊；當年新生不能報</dd><dt>年齡</dt><dd>18 到 65 歲</dd><dt>人數目標</dt><dd>10 人</dd></dl></div>
+<div class="b"><h3>挑戰組 B</h3><p class="say">一起出發、一起到達</p><p>團隊與完成：最完整的戈壁體驗，也是自我挑戰。</p>
+<dl><dt>走多少</dt><dd>四天約 120 公里，不計名次；每天有金、銀、銅標</dd><dt>誰能報</dt><dd>正式註冊學員、教職人員</dd><dt>年齡</dt><dd>18 到 65 歲</dd><dt>人數目標</dt><dd>50 人</dd></dl></div>
+<div class="c"><h3>體驗組 C</h3><p class="say">走過茫茫戈壁，都是姐妹兄弟</p><p>參與與歸屬：沒跑過也能來，可以帶家人。</p>
+<dl><dt>走多少</dt><dd>只走體驗日一天，約 27 公里，10 小時內走完</dd><dt>誰能報</dt><dd>隊員的親友也可以報</dd><dt>年齡</dt><dd>11 到 65 歲，孩子可以來</dd><dt>人數目標</dt><dd>40 人</dd></dl></div>
+</div>
+<p class="note">三組都要交體檢與平板測試報告。報名資格與各組的訓練要求，以大會當屆章程與說明會公布的內容為準；海選後公布分組。</p>
+
+<h2 id="week">每週訓練時間</h2>
 <div class="phase">
 <h3>2026 年 12 月到 2027 年 2 月</h3>
 <div class="slot"><span class="day sat">每週六</span><span class="tm">06:00–08:00</span></div>
@@ -73,7 +113,7 @@ footer{margin-top:34px;padding-top:10px;border-top:1px solid var(--line);color:v
 </div>
 <p class="note">集合地點由教練團事先通知；遇天候、連假或場地因素調整時，會另行公告。沒跑過也歡迎，到場後依組別分開練。</p>
 
-<h2>行事曆</h2>
+<h2 id="cal">行事曆</h2>
 <div class="month"><div class="m">11 月<small>2026</small></div><div class="c"><ul>
 <li>11/29（日）新生始業式：戈22 到各班宣傳</li></ul></div></div>
 <div class="month"><div class="m">12 月</div><div class="c"><ul>
@@ -108,7 +148,7 @@ footer{margin-top:34px;padding-top:10px;border-top:1px solid var(--line);color:v
 <li>戈壁挑戰賽（日期依主辦單位公告）</li></ul></div></div>
 <p class="note">海選日期是暫定；移地訓練的日期與地點確認後會更新。</p>
 
-<h2>教學影片</h2>
+<h2 id="video">教學影片</h2>
 <div class="yt">
 <svg width="46" height="32" viewBox="0 0 46 32" aria-hidden="true"><rect width="46" height="32" rx="8" fill="#D93025"/><path d="M18 9l13 7-13 7z" fill="#fff"/></svg>
 <div>YouTube 頻道「政大EMBA戈壁」每週一支教學影片，從入門與原理講起：暖身與收操、跑姿、配速、怎麼吃。<br><a href="https://www.youtube.com/@政大EMBA戈壁">youtube.com/@政大EMBA戈壁</a></div>
