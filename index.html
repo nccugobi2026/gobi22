@@ -129,11 +129,28 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 @media (max-width:560px){table.cal{font-size:15.5px}.cal .w{width:42px}.cal .d{width:88px}.cal .k{width:118px;white-space:normal}.cal .k .day{margin-bottom:2px}}
 .cal.big{font-size:19px}.cal.big td,.cal.big th{padding:8px 12px}.cal .mm{width:150px;font-weight:700;color:var(--org);white-space:nowrap}.cal .d2{width:170px;white-space:nowrap;font-variant-numeric:tabular-nums}
 @media (max-width:560px){.cal.big{font-size:16px}.cal .mm{width:86px;white-space:normal}.cal .d2{width:96px;white-space:normal}}
+.bar{position:sticky;top:0;z-index:5;background:var(--ink);padding:8px 14px 10px;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.bar .bt{color:#FFE873;font-weight:700;font-size:14px;letter-spacing:2px;margin:0 0 6px;max-width:1500px;margin-left:auto;margin-right:auto}
+.bar .nav{max-width:1500px;margin:0 auto;gap:8px}
+.nav button{font:inherit;font-size:17px;font-weight:700;cursor:pointer;background:#FFFDF8;color:var(--ink);border:2px solid #FFFDF8;border-radius:999px;padding:6px 18px}
+.nav button:hover{background:var(--sand)}
+.nav button[aria-selected="true"]{background:var(--org);border-color:var(--org);color:#fff}
+.nav button:focus-visible{outline:3px solid #FFE873;outline-offset:2px}
+.js .slide{display:none}.js .slide.on{display:block}
+.slide{scroll-margin-top:110px}
+@media (max-width:560px){.bar{padding:6px 8px 8px}.bar .bt{display:none}.bar .nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px}.nav button{font-size:15px;padding:5px 12px;white-space:nowrap;flex:0 0 auto}}
+@media print{.bar{display:none}.js .slide{display:block}}
 </style>
 </head>
 <body>
+<header class="bar">
+<div class="bt">政大 EMBA 戈22</div>
+<nav class="nav" role="tablist" aria-label="選擇要看的頁面">
+<button role="tab" data-g="top">首頁</button><button role="tab" data-g="cal">行事曆</button><button role="tab" data-g="week">每週訓練時間</button><button role="tab" data-g="goal">團隊目標</button><button role="tab" data-g="org">組織圖</button><button role="tab" data-g="groups">三個組別</button><button role="tab" data-g="video">教學影片</button>
+</nav>
+</header>
 <div class="wrap">
-<section class="slide cover" id="top">
+<section class="slide cover" id="top" data-g="top">
 <p class="kicker">政大 EMBA 戈壁挑戰隊・戈22</p>
 <h1>戈22 行事曆與團隊目標：<span class="sc">做自己的英雄，做團隊的靠山</span></h1>
 <p class="lead">訓練時間、每一堂團練的日期、海選與移地、團隊的四個目標和組織，都在這一份。日期如有調整，以這一頁與隊上通知為準。</p>
@@ -142,14 +159,10 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <div class="key r"><div class="d">2/28（日）</div><div class="w">海選（暫定）</div></div>
 <div class="key o"><div class="d">9/27</div><div class="w">出征</div></div>
 </div>
-<p class="pick">點下面的按鈕，跳到你要看的那一張：</p>
-<nav class="nav">
-<a href="#cal">行事曆</a><a href="#week">每週訓練時間</a><a href="#goal">團隊目標</a><a href="#org">組織圖</a><a href="#groups">三個組別</a><a href="#video">教學影片</a>
-</nav>
-<div class="foot"><span>政大 EMBA 戈22 籌備會 ｜ 更新日 2026-11-20</span><span>1／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 籌備會 ｜ 更新日 2026-11-20</span><span></span></div>
 </section>
 
-<section class="slide" id="cal">
+<section class="slide" id="cal" data-g="cal">
 <p class="kicker"><span class="tag2 t-org">行事曆</span>大項</p>
 <h2>行事曆：<span class="sb">12/5 開練</span>、<span class="sc">2/28 海選（暫定）</span>、9/27 出征</h2>
 <table class="cal big"><tr><th class="mm">月份</th><th class="d2">日期</th><th>大項</th></tr>
@@ -167,10 +180,10 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <tr class=""><td class="mm">10 月</td><td class="d2">依主辦單位公告</td><td>戈壁挑戰賽</td></tr>
 </table>
 <p class="note">海選日期是暫定；移地訓練的日期與地點確認後會更新。每一堂團練的日期在「每週訓練時間」。</p>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>2／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span></span></div>
 </section>
 
-<section class="slide" id="week">
+<section class="slide" id="week" data-g="week">
 <p class="kicker"><span class="tag2 t-blue">全隊</span>每週訓練時間 1／6
 <h2>每週訓練時間：12 月起每週六，3 月起週三、週六、每月一次週日</h2>
 <div class="cols"><div><div class="phase">
@@ -185,10 +198,10 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <div class="slot"><span class="day sun">每月一次週日</span><span class="tm">06:00–08:00</span><span>移地訓練算這一次</span></div>
 </div>
 </div></div><p class="note">集合地點由教練團事先通知；遇天候、連假或場地因素調整時，會另行公告。沒跑過也歡迎，到場後依組別分開練。</p>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>3／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>1／6</span></div>
 </section>
 
-<section class="slide" id="w1">
+<section class="slide" id="w1" data-g="week">
 <p class="kicker"><span class="tag2 t-blue">每週訓練時間</span>2／6　前期</p>
 <h2>每一堂的日期：12 到 1 月，每週六 06:00</h2>
 <p class="note">每一堂團練一列，最左邊是第幾週（W1 是 12/5 那一週）。「內容」那一欄在練完之後補上。</p><div class="cols"><div><h3 class="mh">2026 年 12 月</h3>
@@ -205,9 +218,9 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <tr class="r-sat" data-d="2027-01-23"><td class="w">W8</td><td class="d">1/23（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
 <tr class="r-sat" data-d="2027-01-30"><td class="w">W9</td><td class="d">1/30（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
 </table></div></div>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>4／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>2／6</span></div>
 </section>
-<section class="slide" id="w2">
+<section class="slide" id="w2" data-g="week">
 <p class="kicker"><span class="tag2 t-blue">每週訓練時間</span>3／6　開訓</p>
 <h2>2 到 3 月：3/3 起週三 19:30、週六 06:00</h2>
 <div class="cols"><div><h3 class="mh">2027 年 2 月</h3>
@@ -229,9 +242,9 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <tr class="r-wed" data-d="2027-03-31"><td class="w">W18</td><td class="d">3/31（三）</td><td class="k"><span class="day wed">週三</span> 19:30–21:30</td><td class="ct"></td></tr>
 <tr class="r-sun"><td class="w"></td><td class="d">週日</td><td class="k"><span class="day sun">週日</span> 06:00–08:00</td><td class="ct">每月一次，日期另行通知</td></tr>
 </table></div></div>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>5／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>3／6</span></div>
 </section>
-<section class="slide" id="w3">
+<section class="slide" id="w3" data-g="week">
 <p class="kicker"><span class="tag2 t-blue">每週訓練時間</span>4／6　基礎與初選</p>
 <h2>4 到 5 月：5/30 東眼山移地</h2>
 <div class="cols"><div><h3 class="mh">4 月</h3>
@@ -258,9 +271,9 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <tr class="r-sat" data-d="2027-05-29"><td class="w">W26</td><td class="d">5/29（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
 <tr class="r-sun" data-d="2027-05-30"><td class="w">W26</td><td class="d">5/30（日）</td><td class="k"><span class="day sun">移地</span></td><td class="ct">東眼山移地訓練</td></tr>
 </table></div></div>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>6／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>4／6</span></div>
 </section>
-<section class="slide" id="w4">
+<section class="slide" id="w4" data-g="week">
 <p class="kicker"><span class="tag2 t-blue">每週訓練時間</span>5／6　移地整合</p>
 <h2>6 到 7 月：7/25 太平山移地</h2>
 <div class="cols"><div><h3 class="mh">6 月</h3>
@@ -288,9 +301,9 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <tr class="r-wed" data-d="2027-07-28"><td class="w">W35</td><td class="d">7/28（三）</td><td class="k"><span class="day wed">週三</span> 19:30–21:30</td><td class="ct"></td></tr>
 <tr class="r-sat" data-d="2027-07-31"><td class="w">W35</td><td class="d">7/31（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
 </table></div></div>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>7／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>5／6</span></div>
 </section>
-<section class="slide" id="w5">
+<section class="slide" id="w5" data-g="week">
 <p class="kicker"><span class="tag2 t-blue">每週訓練時間</span>6／6　多日訓練與賽前調整</p>
 <h2>8 到 9 月：觀霧兩天一夜，團練到 9/25</h2>
 <div class="cols"><div><h3 class="mh">8 月</h3>
@@ -315,10 +328,10 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <tr class="r-sat" data-d="2027-09-25"><td class="w">W43</td><td class="d">9/25（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
 <tr class="r-sun"><td class="w"></td><td class="d">週日</td><td class="k"><span class="day sun">週日</span> 06:00–08:00</td><td class="ct">每月一次，日期另行通知</td></tr>
 </table></div></div><p class="note">藍色是週六、橘色是週三、綠色是移地與每月一次的週日。海選日期是暫定；遇連假、天候調整時由教練團通知。</p>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>8／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>6／6</span></div>
 </section>
 
-<section class="slide" id="goal">
+<section class="slide" id="goal" data-g="goal">
 <p class="kicker"><span class="tag2 t-red">團隊目標</span>一個目標、四個獎</p>
 <h2>戈22 目標：四大獎再抱回</h2>
 <div class="goal">一個目標、四個獎；每個獎一個指標、一個負責的組、三件要做的事。<b>四個獎要全隊一起拿</b>，不是只靠競賽組。</div>
@@ -362,10 +375,10 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 </g>
 </svg></div>
 <p class="note swipe">手機上可以左右滑動看整張圖。</p>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>9／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span></span></div>
 </section>
 
-<section class="slide" id="org">
+<section class="slide" id="org" data-g="org">
 <p class="kicker"><span class="tag2 t-red">團隊目標</span>組織</p>
 <h2>組織圖：會長、祕書長，底下五組；每個獎都對得到負責的組</h2>
 <div class="tree"><svg viewBox="0 0 760 418" role="img" aria-label="戈22 組織圖：會長、祕書長與五組">
@@ -403,10 +416,10 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 </svg></div>
 <p class="note swipe">手機上可以左右滑動看整張圖。</p>
 <p class="note">每個獎都對得到負責的組：卓越獎是訓練組，沙克爾頓獎是醫療組與訓練組，文化風範獎是領隊與全員，傳承超越獎是公關組的招生。有事找哪一組，看這張圖。</p>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>10／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span></span></div>
 </section>
 
-<section class="slide" id="groups">
+<section class="slide" id="groups" data-g="groups">
 <p class="kicker"><span class="tag2 t-green">三個組別</span>找到適合你的一組</p>
 <h2>三個組別：競賽組 A、挑戰組 B、體驗組 C</h2>
 <div class="grp">
@@ -418,19 +431,35 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 <dl><dt>走多少</dt><dd>只走體驗日一天，約 27 公里，10 小時內走完</dd><dt>誰能報</dt><dd>隊員的親友也可以報</dd><dt>年齡</dt><dd>11 到 65 歲，孩子可以來</dd><dt>人數目標</dt><dd>40 人</dd></dl></div>
 </div>
 <p class="note">三組都要交體檢與平板測試報告。報名資格與各組的訓練要求，以大會當屆章程與說明會公布的內容為準；海選後公布分組。</p>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>11／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span></span></div>
 </section>
 
-<section class="slide" id="video">
+<section class="slide" id="video" data-g="video">
 <p class="kicker"><span class="tag2 t-org">教學影片</span>YouTube</p>
 <h2>教學影片：每週一支，從入門與原理講起</h2>
 <div class="yt">
 <svg width="46" height="32" viewBox="0 0 46 32" aria-hidden="true"><rect width="46" height="32" rx="8" fill="#D93025"/><path d="M18 9l13 7-13 7z" fill="#fff"/></svg>
 <div>YouTube 頻道「政大EMBA戈壁」每週一支教學影片，從入門與原理講起：暖身與收操、跑姿、配速、怎麼吃。<br><a href="https://www.youtube.com/@政大EMBA戈壁">youtube.com/@政大EMBA戈壁</a></div>
 </div>
-<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span>12／12</span></div>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span></span></div>
 </section>
 </div>
-<a class="back" href="#top">回到第 1 張</a>
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var tabs=[].slice.call(document.querySelectorAll('.nav button'));
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var ids=tabs.map(function(b){return b.getAttribute('data-g');});
+  function show(g,push){
+    if(ids.indexOf(g)<0)g='top';
+    tabs.forEach(function(b){b.setAttribute('aria-selected',b.getAttribute('data-g')===g?'true':'false');});
+    slides.forEach(function(s){s.classList.toggle('on',s.getAttribute('data-g')===g);});
+    if(push){try{history.replaceState(null,'','#'+g);}catch(e){} window.scrollTo(0,0);}
+  }
+  tabs.forEach(function(b){b.addEventListener('click',function(){show(b.getAttribute('data-g'),true);});});
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  show((location.hash||'#top').slice(1),false);
+})();
+</script>
 </body>
 </html>
