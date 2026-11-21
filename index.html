@@ -203,13 +203,19 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 .qrc figcaption b{font-size:16px;word-break:normal}
 .qrc .dl{font-weight:700}
 @media (max-width:700px){.qrs{grid-template-columns:1fr;max-width:320px}}
+.pdfb{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:17px;background:var(--red);color:#fff;border-radius:999px;padding:8px 24px}
+.btn.alt{background:var(--card);color:var(--ink);border:2px solid var(--ink);padding:6px 22px}
+.pdfp{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin:8px 0 18px}
+.pdfp img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px}
+@media (max-width:560px){.pdfp{grid-template-columns:repeat(2,1fr);gap:6px}}
 </style>
 </head>
 <body>
 <header class="bar">
 <div class="bt">政大 EMBA 戈22</div>
 <nav class="nav" role="tablist" aria-label="選擇要看的頁面">
-<button role="tab" data-g="top">首頁</button><button role="tab" data-g="cal">行事曆</button><button role="tab" data-g="week">每週訓練時間</button><button role="tab" data-g="goal">團隊目標</button><button role="tab" data-g="org">組織圖</button><button role="tab" data-g="groups">三個組別</button><button role="tab" data-g="video">教學影片</button><button role="tab" data-g="res">照片與 Slogan</button><button role="tab" data-g="line">LINE 宣傳文</button>
+<button role="tab" data-g="top">首頁</button><button role="tab" data-g="cal">行事曆</button><button role="tab" data-g="week">每週訓練時間</button><button role="tab" data-g="goal">團隊目標</button><button role="tab" data-g="org">組織圖</button><button role="tab" data-g="groups">三個組別</button><button role="tab" data-g="video">教學影片</button><button role="tab" data-g="res">照片與 Slogan</button><button role="tab" data-g="line">LINE 宣傳文與 PDF</button>
 </nav>
 </header>
 <div class="wrap">
@@ -594,9 +600,9 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 
 <section class="slide" id="line" data-g="line">
 <p class="kicker"><span class="tag2 t-org">宣傳資源</span>LINE</p>
-<h2>LINE 宣傳文：搭配影片、搭配 PDF 兩種，加三個 QR Code</h2>
-<p class="lead">上面兩則搭配影片一起發，下面兩則搭配「什麼是戈壁」PDF 一起傳。按「複製」貼到群組，連結都已經放在文字裡。</p>
-<h3 class="vh">影片宣傳文</h3>
+<h2>LINE 宣傳文、PDF 介紹與三個 QR Code</h2>
+<p class="lead">LINE 宣傳文按「複製」貼到群組，連結都已經放在文字裡；圖文的 PDF 介紹和三個 QR Code 在下面，可以下載。</p>
+<h3 class="vh">LINE 宣傳文</h3>
 <div class="cps one"><div class="cp"><div class="cph"><b>完整版（搭配影片）</b><button type="button" class="cpb">複製</button></div><pre>【戈22挑戰賽】
 
 「121 公里？太遠了吧。」
@@ -639,33 +645,10 @@ iPhone：https://apps.apple.com/tw/app/nccu-gobitrack/id6828919860
 📅 2/20（六）海選
 
 政大戈22，做自己的英雄，做團隊的靠山！</pre></div></div>
-<h3 class="vh">PDF 宣傳文（搭配「什麼是戈壁」PDF 一起傳）</h3>
-<div class="cps one"><div class="cp"><div class="cph"><b>PDF 完整版</b><button type="button" class="cpb">複製</button></div><pre>各位學長姐好：
-
-附上政大 EMBA 戈22 的介紹「什麼是戈壁」，十頁，三分鐘可以看完。
-
-每年十月，四十多所商學院的 EMBA 同學走進甘肅的戈壁，沿著玄奘當年西行的路線，用四天三夜走完 121 公里。聽起來很遠，但這份介紹會把它拆開來給你看：
-
-▪ 賽事是什麼：玄奘之路戈壁挑戰賽，戈21 的 EMBA 組有 46 所院校參加
-▪ 四天怎麼走：每天大約 27 到 34 公里，附路線圖
-▪ 可以用走的：B 組挑戰組守住每天的關門時間就好
-▪ 三個組別：A 組競賽組、B 組挑戰組、C 組體驗組
-▪ 一年的準備：從每週六的初階訓練開始，十月才站上起跑線
-▪ 戈壁教的三堂領導課，還有一群一起吃過苦的同學
-
-🏃 12/5（六）起到 2 月，每個星期六都有初階的跑步訓練，歡迎先來交流
-📅 2/20（六）海選
-
-想多了解，歡迎加入戈22 挑戰群：
-https://line.me/ti/g/_D2jxDgUFq
-
-你不需要先成為跑者，你需要的，是願意跨出第一步。
-政大戈22，做自己的英雄，做團隊的靠山！</pre></div><div class="cp"><div class="cph"><b>PDF 短版</b><button type="button" class="cpb">複製</button></div><pre>政大 EMBA 戈22 招募中！
-附上「什麼是戈壁」介紹（PDF，十頁）：四天三夜 121 公里怎麼走、三個組別怎麼選、一年怎麼準備，一次看懂。
-
-🏃 12/5（六）起，每個星期六初階跑步訓練，歡迎來交流
-📅 2/20（六）海選
-👉 戈22 挑戰群：https://line.me/ti/g/_D2jxDgUFq</pre></div></div>
+<h3 class="vh">PDF 介紹「什麼是戈壁」（圖文，10 頁）</h3>
+<p class="pdfb"><a class="btn" href="img/gobi22_intro.pdf" download="政大EMBA戈22_什麼是戈壁.pdf">下載 PDF（6.6 MB）</a><a class="btn alt" href="img/gobi22_intro.pdf" target="_blank" rel="noopener">在瀏覽器打開</a></p>
+<p class="note">有照片有文字的介紹，可以直接傳到 LINE 群組或印出來：賽事是什麼、四天路線圖、三個組別、訓練時程、三堂領導課。下面是十頁的預覽，點任何一頁會打開 PDF。</p>
+<div class="pdfp"><a href="img/gobi22_intro.pdf#page=1" target="_blank" rel="noopener"><img src="img/pdf/p01.jpg" alt="PDF 第 1 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=2" target="_blank" rel="noopener"><img src="img/pdf/p02.jpg" alt="PDF 第 2 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=3" target="_blank" rel="noopener"><img src="img/pdf/p03.jpg" alt="PDF 第 3 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=4" target="_blank" rel="noopener"><img src="img/pdf/p04.jpg" alt="PDF 第 4 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=5" target="_blank" rel="noopener"><img src="img/pdf/p05.jpg" alt="PDF 第 5 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=6" target="_blank" rel="noopener"><img src="img/pdf/p06.jpg" alt="PDF 第 6 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=7" target="_blank" rel="noopener"><img src="img/pdf/p07.jpg" alt="PDF 第 7 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=8" target="_blank" rel="noopener"><img src="img/pdf/p08.jpg" alt="PDF 第 8 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=9" target="_blank" rel="noopener"><img src="img/pdf/p09.jpg" alt="PDF 第 9 頁" width="632" height="447" loading="lazy"></a><a href="img/gobi22_intro.pdf#page=10" target="_blank" rel="noopener"><img src="img/pdf/p10.jpg" alt="PDF 第 10 頁" width="632" height="447" loading="lazy"></a></div>
 <h3 class="vh">三個 QR Code（圖檔）</h3>
 <p class="note">要放進簡報、海報或直接傳圖的時候用。點圖看大圖，按「下載圖檔」存下來。</p>
 <div class="qrs"><figure class="qrc"><a href="img/qr_youtube.png" target="_blank" rel="noopener"><img src="img/qr_youtube.png" alt="YouTube　政大EMBA戈壁 的 QR Code" width="1000" height="1000" loading="lazy"></a><figcaption><b>YouTube　政大EMBA戈壁</b><a href="https://www.youtube.com/@政大EMBA戈壁" target="_blank" rel="noopener">www.youtube.com/@政大EMBA戈壁</a><a class="dl" href="img/qr_youtube.png" download="戈22_qr_youtube.png">下載圖檔</a></figcaption></figure><figure class="qrc"><a href="img/qr_line.png" target="_blank" rel="noopener"><img src="img/qr_line.png" alt="LINE　戈22 挑戰群 的 QR Code" width="1000" height="1000" loading="lazy"></a><figcaption><b>LINE　戈22 挑戰群</b><a href="https://line.me/ti/g/_D2jxDgUFq" target="_blank" rel="noopener">line.me/ti/g/_D2jxDgUFq</a><a class="dl" href="img/qr_line.png" download="戈22_qr_line.png">下載圖檔</a></figcaption></figure><figure class="qrc"><a href="img/qr_app.png" target="_blank" rel="noopener"><img src="img/qr_app.png" alt="政大專屬程式　NCCU GobiTrack（iPhone） 的 QR Code" width="1000" height="1000" loading="lazy"></a><figcaption><b>政大專屬程式　NCCU GobiTrack（iPhone）</b><a href="https://apps.apple.com/tw/app/nccu-gobitrack/id6828919860" target="_blank" rel="noopener">apps.apple.com/tw/app/nccu-gobitrack/id6828919860</a><a class="dl" href="img/qr_app.png" download="戈22_qr_app.png">下載圖檔</a></figcaption></figure></div>
