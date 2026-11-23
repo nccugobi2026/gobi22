@@ -177,6 +177,9 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 @media (max-width:560px){.cal .td{width:34%}}
 .cal .td .who{color:var(--blue);font-weight:700}
 .cal .td .off{color:var(--mute);font-weight:400}
+.cal .td .done{color:var(--green);font-weight:700}
+.cal .pp{width:16%;color:var(--ink)}
+@media (max-width:560px){.cal .pp{width:18%}}
 .cal .td .memo{color:var(--ink);font-weight:400}
 .cal .td .th{display:inline-block;margin-left:8px;vertical-align:middle}
 .cal .td .th img{display:block;height:72px;width:auto;border:1px solid var(--line);border-radius:4px}
@@ -243,20 +246,20 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 <section class="slide" id="cal" data-g="cal">
 <p class="kicker"><span class="tag2 t-org">行事曆</span>大項</p>
 <h2>行事曆：<span class="sb">12/5 開練</span>、<span class="sc">2/20 海選（暫定）</span>、9/27 出征</h2>
-<table class="cal big"><tr><th class="mm">月份</th><th class="d2">日期</th><th>大項</th><th class="td">待辦事項（這天之前完成）</th></tr>
-<tr class=""><td class="mm">2026 年 11 月</td><td class="d2">11/29（日）</td><td>新生始業式：戈22 到各班宣傳</td><td class="td">招生手牌<span class="who">（Sisy）</span><br>易立牌<span class="who">（Sisy）</span><a class="th" href="img/rollup.jpg" target="_blank" rel="noopener"><img src="img/rollup.jpg" alt="易立牌設計稿" loading="lazy"></a><br>戈壁 LOGO<span class="who">（David）</span><br>介紹文件及影片<span class="who">（David）</span><br>裝備搬到政大樂活營<span class="who">（會長）</span><br><s class="off">與班聯會 Eric 合作，到班上推銷（David）</s><br><span class="memo">只能由學生會代表推銷，或用立牌</span></td></tr>
-<tr class="hot"><td class="mm">12 月</td><td class="d2">12/5（六）</td><td><b>週六團練開始</b>，之後每週六 06:00</td><td class="td"></td></tr>
-<tr class=""><td class="mm"></td><td class="d2">12/12（六）</td><td>招募說明會</td><td class="td"></td></tr>
-<tr class=""><td class="mm"></td><td class="d2">12/15（二）</td><td></td><td class="td">拍照用的立牌，要重新設計<span class="who">（Sisy）</span><a class="th" href="img/sign.jpg?v=2" target="_blank" rel="noopener"><img src="img/sign.jpg?v=2" alt="戈21 的立牌，參考用" loading="lazy"></a></td></tr>
-<tr class="hot"><td class="mm">2027 年 2 月</td><td class="d2">2/20（六）</td><td><b>海選</b><span class="tag">暫定</span>：12 公里，另有 5 公里體驗組</td><td class="td">賽道 T 服<span class="who">（Vinka）</span><br>手提背包<span class="who">（Amy）</span></td></tr>
-<tr class=""><td class="mm"></td><td class="d2">2/21（日）</td><td>社團博覽會：戈22 攤位</td><td class="td"></td></tr>
-<tr class=""><td class="mm">3 月</td><td class="d2">3/2 到 3/19</td><td>旅行社報名</td><td class="td"></td></tr>
-<tr class=""><td class="mm"></td><td class="d2">3/3（三）</td><td><b>固定團練開始</b>：週三、週六、每月一次週日</td><td class="td"></td></tr>
-<tr class=""><td class="mm">5 月</td><td class="d2">5/30（日）</td><td>移地訓練：東眼山</td><td class="td"></td></tr>
-<tr class=""><td class="mm">7 月</td><td class="d2">7/25（日）</td><td>移地訓練：太平山</td><td class="td"></td></tr>
-<tr class=""><td class="mm">8 月</td><td class="d2">8/28 到 8/29</td><td>移地訓練：觀霧，兩天一夜</td><td class="td"></td></tr>
-<tr class="hot"><td class="mm">9 月</td><td class="d2">9/27</td><td><b>出征</b></td><td class="td"></td></tr>
-<tr class=""><td class="mm">10 月</td><td class="d2">依主辦單位公告</td><td>戈壁挑戰賽</td><td class="td"></td></tr>
+<table class="cal big"><tr><th class="mm">月份</th><th class="d2">日期</th><th>大項</th><th class="td">待辦事項（這天之前完成）</th><th class="pp">參與人員</th></tr>
+<tr class=""><td class="mm">2026 年 11 月</td><td class="d2">11/29（日）</td><td>新生始業式：戈22 到各班宣傳</td><td class="td">招生手牌<span class="who">（Sisy）</span><br>易立牌<span class="who">（Sisy）</span><a class="th" href="img/rollup.jpg" target="_blank" rel="noopener"><img src="img/rollup.jpg" alt="易立牌設計稿" loading="lazy"></a><br>戈壁 LOGO<span class="who">（David）</span><br><s class="off">介紹文件及影片（David）</s> <span class="done">已完成</span><br>裝備搬到政大樂活營<span class="who">（會長）</span><br><s class="off">與班聯會 Eric 合作，到班上推銷（David）</s><br><span class="memo">只能由學生會代表推銷，或用立牌</span></td><td class="pp"></td></tr>
+<tr class="hot"><td class="mm">12 月</td><td class="d2">12/5（六）</td><td><b>週六團練開始</b>，之後每週六 06:00</td><td class="td"></td><td class="pp"></td></tr>
+<tr class=""><td class="mm"></td><td class="d2">12/12（六）</td><td>招募說明會</td><td class="td"></td><td class="pp"></td></tr>
+<tr class=""><td class="mm"></td><td class="d2">12/15（二）</td><td></td><td class="td">拍照用的立牌，要重新設計<span class="who">（Sisy）</span><a class="th" href="img/sign.jpg?v=2" target="_blank" rel="noopener"><img src="img/sign.jpg?v=2" alt="戈21 的立牌，參考用" loading="lazy"></a></td><td class="pp"></td></tr>
+<tr class="hot"><td class="mm">2027 年 2 月</td><td class="d2">2/20（六）</td><td><b>海選</b><span class="tag">暫定</span>：12 公里，另有 5 公里體驗組</td><td class="td">賽道 T 服<span class="who">（Vinka）</span><br>手提背包<span class="who">（Amy）</span></td><td class="pp"></td></tr>
+<tr class=""><td class="mm"></td><td class="d2">2/21（日）</td><td>社團博覽會：戈22 攤位</td><td class="td"></td><td class="pp"></td></tr>
+<tr class=""><td class="mm">3 月</td><td class="d2">3/2 到 3/19</td><td>旅行社報名</td><td class="td"></td><td class="pp"></td></tr>
+<tr class=""><td class="mm"></td><td class="d2">3/3（三）</td><td><b>固定團練開始</b>：週三、週六、每月一次週日</td><td class="td"></td><td class="pp"></td></tr>
+<tr class=""><td class="mm">5 月</td><td class="d2">5/30（日）</td><td>移地訓練：東眼山</td><td class="td"></td><td class="pp"></td></tr>
+<tr class=""><td class="mm">7 月</td><td class="d2">7/25（日）</td><td>移地訓練：太平山</td><td class="td"></td><td class="pp"></td></tr>
+<tr class=""><td class="mm">8 月</td><td class="d2">8/28 到 8/29</td><td>移地訓練：觀霧，兩天一夜</td><td class="td"></td><td class="pp"></td></tr>
+<tr class="hot"><td class="mm">9 月</td><td class="d2">9/27</td><td><b>出征</b></td><td class="td"></td><td class="pp"></td></tr>
+<tr class=""><td class="mm">10 月</td><td class="d2">依主辦單位公告</td><td>戈壁挑戰賽</td><td class="td"></td><td class="pp"></td></tr>
 </table>
 <p class="note">海選日期是暫定；移地訓練的日期與地點確認後會更新。每一堂團練的日期在「每週訓練時間」。</p>
 <div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-20</span><span></span></div>
