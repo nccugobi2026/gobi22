@@ -140,7 +140,8 @@ table.cal{font-size:17px}.cal th{font-size:15px}.cal .k .day{font-size:14.5px}.c
 .slide{scroll-margin-top:110px}
 @media (max-width:560px){.bar{padding:6px 8px 8px}.bar .bt{display:none}.bar .nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px}.nav button{font-size:15px;padding:5px 12px;white-space:nowrap;flex:0 0 auto}}
 @media print{.bar{display:none}.js .slide{display:block}}
-.vh{font-size:19px;margin:22px 0 8px}
+.vh{font-family:"Noto Serif TC",Georgia,serif;font-size:32px;line-height:1.3;margin:38px 0 14px;padding-left:14px;border-left:8px solid var(--org)}
+@media (max-width:560px){.vh{font-size:23px;margin:28px 0 10px;padding-left:10px;border-left-width:6px}}
 .vid{position:relative;width:100%;max-width:960px;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
 .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .grp h4{margin:12px 0 2px;font-size:16px;border-top:1px solid var(--line);padding-top:8px}
@@ -272,6 +273,14 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 @media (max-width:820px){.tl::before{transform-origin:center top;animation-name:tly}.tn.up .tx,.tn.dn .tx{animation-name:tlfade}}
 @media (prefers-reduced-motion:reduce){.tl::before,.tn .no,.tn .tx,.tn::after{animation:none!important}}
 @media print{.tl::before,.tn .no,.tn .tx,.tn::after{animation:none!important}}
+.awd{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.aw1{display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-top:6px solid var(--org);border-radius:12px;padding:16px 10px 18px}
+.aw1.b{border-top-color:var(--blue)}.aw1.g{border-top-color:var(--green)}.aw1.r{border-top-color:var(--red)}
+.aw1:hover{background:var(--sand)}
+.aw1 svg{width:120px;height:150px}
+.aw1 b{font-family:"Noto Serif TC",Georgia,serif;font-size:28px;margin-top:6px}
+.aw1 span{font-size:19px;color:var(--sub);margin-top:2px}
+@media (max-width:820px){.awd{grid-template-columns:repeat(2,1fr)}.aw1 svg{width:90px;height:112px}.aw1 b{font-size:22px}.aw1 span{font-size:16px}}
 </style>
 </head>
 <body>
@@ -312,6 +321,14 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 </div>
 <div class="clg"><img src="img/coach_logo.png" alt="跑者肌地"><b>跑者肌地 助理教練群</b><span>運動科學 × 肌力體能</span></div>
 </div>
+<h3 class="vh">團隊目標：四大獎再抱回</h3>
+<div class="awd">
+<a class="aw1 o" href="#goal"><svg viewBox="0 0 120 150" aria-hidden="true"><rect x="32" y="122" width="56" height="20" rx="3" fill="#2B1F14"/><rect x="42" y="128" width="36" height="8" rx="1.5" fill="#D9A441"/><path d="M34 34C14 34 16 66 40 68" fill="none" stroke="#B5832A" stroke-width="5" stroke-linecap="round"/><path d="M86 34C106 34 104 66 80 68" fill="none" stroke="#B5832A" stroke-width="5" stroke-linecap="round"/><path d="M32 22H88V52A28 30 0 0 1 32 52Z" fill="#D9A441"/><path d="M40 26H52V54A20 22 0 0 0 58 74A22 26 0 0 1 40 52Z" fill="#fff" opacity=".28"/><rect x="55" y="80" width="10" height="30" fill="#B5832A"/><path d="M40 122C40 112 80 112 80 122Z" fill="#D9A441"/></svg><b>卓越獎</b><span>A 隊前 20 名</span></a>
+<a class="aw1 b" href="#goal"><svg viewBox="0 0 120 150" aria-hidden="true"><rect x="32" y="122" width="56" height="20" rx="3" fill="#2B1F14"/><rect x="42" y="128" width="36" height="8" rx="1.5" fill="#B98A5E"/><g fill="none" stroke="#9A6B3F" stroke-width="7" stroke-linecap="round"><path d="M60 122V62"/><path d="M60 66C42 58 32 42 30 20"/><path d="M60 66C78 58 88 42 90 20"/><path d="M48 122C50 100 54 88 60 80C66 88 70 100 72 122"/></g><circle cx="60" cy="44" r="9" fill="#9A6B3F"/><circle cx="30" cy="16" r="5" fill="#B98A5E"/><circle cx="90" cy="16" r="5" fill="#B98A5E"/></svg><b>沙克爾頓獎</b><span>A、B 隊全員完賽</span></a>
+<a class="aw1 g" href="#goal"><svg viewBox="0 0 120 150" aria-hidden="true"><rect x="32" y="122" width="56" height="20" rx="3" fill="#2B1F14"/><rect x="42" y="128" width="36" height="8" rx="1.5" fill="#E2B85C"/><path d="M34 34C14 34 16 66 40 68" fill="none" stroke="#C0902F" stroke-width="5" stroke-linecap="round"/><path d="M86 34C106 34 104 66 80 68" fill="none" stroke="#C0902F" stroke-width="5" stroke-linecap="round"/><path d="M32 22H88V52A28 30 0 0 1 32 52Z" fill="#E2B85C"/><path d="M40 26H52V54A20 22 0 0 0 58 74A22 26 0 0 1 40 52Z" fill="#fff" opacity=".28"/><rect x="55" y="80" width="10" height="30" fill="#C0902F"/><path d="M40 122C40 112 80 112 80 122Z" fill="#E2B85C"/></svg><b>文化風範獎</b><span>零黃牌、零投訴</span></a>
+<a class="aw1 r" href="#goal"><svg viewBox="0 0 120 150" aria-hidden="true"><rect x="32" y="122" width="56" height="20" rx="3" fill="#2B1F14"/><rect x="42" y="128" width="36" height="8" rx="1.5" fill="#D8B7A3"/><path d="M62 8C70 40 98 52 90 88C86 108 72 122 60 122C46 122 30 110 30 88C30 68 44 62 46 42C54 54 60 44 62 8Z" fill="#B88468"/><path d="M62 52C66 72 80 78 76 98C74 110 66 118 60 118C52 118 44 110 44 98C44 86 52 82 54 70C58 76 61 70 62 52Z" fill="#E7C9B6"/></svg><b>傳承超越獎</b><span>人數超過上屆，目標 100 人</span></a>
+</div>
+<p class="note">四個獎要全隊一起拿。<a href="#goal">看完整的團隊目標 →</a></p>
 <h3 class="vh">加入我們</h3>
 <div class="links">
 <a class="lk line" href="https://line.me/ti/g/_D2jxDgUFq" target="_blank" rel="noopener"><img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAIAAAAG+WgKAAAEDklEQVR4nO3dzY3QOhhAUUC0wJ4C6L8SCmBPEcMeS8iyrmMHnbN8mpdkhitLn/Ljzx8fH5+g8+X0BfC/kRQxSRGTFDFJEZMUMUkRkxQxSRGTFDFJEfs680M/vn/bfR3/8PPX77/+y3g948/MqH6vmStcO87otn+LkVWKmKSISYqYpIhJitjUxDdam7BmzEw0+yaj6shrU+raJHv232JklSImKWKSIiYpYpIitjjxjfZNWDPnWpuMxuPMHPnsvDnj7NmtUsQkRUxSxCRFTFLEsonvSdVTlDNHHlXzVHU38zZWKWKSIiYpYpIiJilir5z4RtX9u7Nuu541VilikiImKWKSIiYpYtnE9+S0cv87emvXU82kZydHqxQxSRGTFDFJEZMUscWJ7+wXI0drU9ja11Sq6zn71t4+VilikiImKWKSIiYpYp//jx3Y75/LRt7jgymSIiYpYpIiJiliUxPfvp0FZs41enL3vSe/uLL2N9z3f60d2SpFTFLEJEVMUsQkRWxx4lvz5C51M85OqU/OdzOqSdYqRUxSxCRFTFLEJEUse6pz39tkt+0wXs2tM0dec/YZV6sUMUkRkxQxSRGTFLHsHt/Z5zz3Xc8bvwt69v1EqxQxSRGTFDFJEZMUscVvdd7/PZN9890bv6by5HuFVilikiImKWKSIiYpYlMT375d4arnIc++DzhzPferrtkqRUxSxCRFTFLEJEUs24H9tnfiqnON9k2OM8ep/hr7jmyVIiYpYpIiJilikiK2cT++fW/AzZzr7HHWzjXj7DdhZliliEmKmKSISYqYpIhN3eN7cja5/5uW1V/jjd/89B4fB0iKmKSISYqYpIgtvsd39v7dzJH3XeH9T4fO2PemoVWKmKSISYqYpIhJilh2j2/fPgL77LuD9uQ09+RvMcMqRUxSxCRFTFLEJEXs0R3Yn3wa8/79+Ga88e6hVYqYpIhJipikiEmKWLYD++jJ+3dv/Obn6Lb7m2u/hVWKmKSISYqYpIhJitjGb3Xus+8e39nvXp6dHKsZ0CpFTFLEJEVMUsQkRWzjtzorTz6ReP8zk2tn91QnLyYpYpIiJilikiK2uAP72V3qzt5lO/vE5m37A46sUsQkRUxSxCRFTFLEFie+0dkvnIz23Ylbezp03+6EM/ZNsiOrFDFJEZMUMUkRkxSxbOI7q5rC3nj2metZ+xlfbuEKkiImKWKSIiYpYq+c+Pbd+ars2wlibQpbO7svt3AFSRGTFDFJEZMUsWziO/t9lSd36Juxb2eKteczPdXJi0mKmKSISYqYpIgtTnxnv9659tTivv3W9539yTl65B4fV5AUMUkRkxQxSRF75X583MwqRUxSxCRFTFLEJEVMUsQkRUxSxCRFTFLEJEXsD3CRJGFMtbO+AAAAAElFTkSuQmCC" alt="LINE 戈22 挑戰群 的 QR Code" width="132" height="132"><div class="lt"><b>LINE　戈22 挑戰群</b><span>隊上的 LINE 群組：公告、訓練通知、大家互相打氣</span><i>加入群組 →</i></div></a>
