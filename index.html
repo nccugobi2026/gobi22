@@ -212,21 +212,23 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 .pdfp{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin:8px 0 18px}
 .pdfp img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px}
 @media (max-width:560px){.pdfp{grid-template-columns:repeat(2,1fr);gap:6px}}
-.coach{display:grid;grid-template-columns:240px 1fr 300px;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
-.coach figure{margin:0}
-.coach figure img{width:100%;height:auto;display:block;border-radius:8px}
-.coach figcaption{font-size:15.5px;color:var(--mute);margin-top:4px;text-align:center}
-.coach .cn{margin:0;font-family:"Noto Serif TC",Georgia,serif;font-size:28px;color:var(--org)}
-.coach .cn b{font-size:54px;color:var(--ink);margin-left:4px}
-.coach .cs{margin:6px 0;color:var(--sub);font-size:21px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-.chips span{background:var(--ink);color:#fff;border-radius:8px;padding:5px 14px;font-size:20px}
-.chips b{color:#FFE873;font-size:32px;margin-right:2px}
-.coach ul{margin:8px 0 12px;padding-left:24px;font-size:21px}
-.coach li{margin:4px 0}
+.coach{display:grid;grid-template-columns:270px minmax(0,1fr) 340px;gap:0;align-items:stretch;background:var(--ink);border-radius:14px;overflow:hidden;max-width:1240px}
+.coach figure{margin:0;position:relative;min-height:400px}
+.coach figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.coach figcaption{position:absolute;left:0;right:0;bottom:0;font-size:14.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.75));padding:22px 12px 8px;text-align:center}
+.coach .ct2{padding:26px 30px;display:flex;flex-direction:column;justify-content:center}
+.coach .cn{margin:0;font-family:"Noto Serif TC",Georgia,serif;font-size:24px;color:#FFE873;letter-spacing:4px}
+.coach .cn b{display:block;font-size:60px;line-height:1.15;color:#fff;letter-spacing:6px}
+.coach .cs{margin:6px 0 0;color:#E6DCC8;font-size:20px}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}
+.chips span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:10px;padding:8px 4px;font-size:17px;text-align:center}
+.chips b{display:block;color:#FFE873;font-size:40px;line-height:1.1;font-family:Georgia,serif}
+.coach ul{margin:0;padding-left:22px;font-size:20px;color:#fff}
+.coach li{margin:5px 0}
+.coach li b{color:#FFE873}
 .cred{font-size:13px;color:var(--mute)}
-@media (max-width:560px){.coach .cn{font-size:21px}.coach .cn b{font-size:38px}.coach .cs,.coach ul{font-size:17px}.chips span{font-size:16px}.chips b{font-size:24px}}
-@media (max-width:900px){.coach{grid-template-columns:1fr 1fr}.coach .ct2{grid-column:1/-1;order:-1}}
+@media (max-width:1000px){.coach{grid-template-columns:1fr 1fr}.coach .ct2{grid-column:1/-1;order:-1}.coach figure{min-height:300px}}
+@media (max-width:560px){.coach .ct2{padding:18px 16px}.coach .cn{font-size:19px}.coach .cn b{font-size:42px}.coach .cs,.coach ul{font-size:17px}.chips{grid-template-columns:repeat(2,1fr)}.chips span{font-size:15.5px}.chips b{font-size:32px}.coach figure{min-height:220px}}
 .yts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:6px 0 10px}
 .ytc{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;padding-bottom:10px}
 .ytc:hover{border-color:var(--org)}
@@ -263,15 +265,14 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 <div class="coach">
 <figure><img src="img/coach_london2012.jpg" alt="張嘉哲在 2012 倫敦奧運男子馬拉松" loading="lazy"><figcaption>2012 倫敦奧運男子馬拉松</figcaption></figure>
 <div class="ct2">
-<p class="cn">總教練　<b>張嘉哲</b></p>
-<p class="cs">奧運馬拉松國手，帶戈22 從 12 月練到 10 月的戈壁</p>
+<p class="cn">總教練<b>張嘉哲</b></p>
+<p class="cs">奧運馬拉松國手・跑者肌地教練團</p>
 <div class="chips"><span><b>1</b> 屆奧運</span><span><b>2</b> 屆亞運</span><span><b>3</b> 屆世錦賽</span><span><b>14</b> 次國手</span></div>
 <ul>
 <li>2012 年在平壤跑出 <b>2:16:06</b>，拿到倫敦奧運門票</li>
 <li>2019 年廣州馬拉松個人最佳 <b>2:15:02</b></li>
 <li>50 公里全國紀錄保持人</li>
 </ul>
-<p class="cs">教練團：跑者肌地</p>
 </div>
 <figure><img src="img/coach_pyongyang2012.jpg" alt="張嘉哲在 2012 平壤萬景臺馬拉松終點" loading="lazy"><figcaption>2012 平壤萬景臺馬拉松</figcaption></figure>
 </div>
