@@ -212,23 +212,23 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 .pdfp{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin:8px 0 18px}
 .pdfp img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px}
 @media (max-width:560px){.pdfp{grid-template-columns:repeat(2,1fr);gap:6px}}
-.coach{display:grid;grid-template-columns:270px minmax(0,1fr) 340px;gap:0;align-items:stretch;background:var(--ink);border-radius:14px;overflow:hidden;max-width:1240px}
-.coach figure{margin:0;position:relative;min-height:400px}
-.coach figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.coach figcaption{position:absolute;left:0;right:0;bottom:0;font-size:14.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.75));padding:22px 12px 8px;text-align:center}
-.coach .ct2{padding:26px 30px;display:flex;flex-direction:column;justify-content:center}
-.coach .cn{margin:0;font-family:"Noto Serif TC",Georgia,serif;font-size:24px;color:#FFE873;letter-spacing:4px}
-.coach .cn b{display:block;font-size:60px;line-height:1.15;color:#fff;letter-spacing:6px}
-.coach .cs{margin:6px 0 0;color:#E6DCC8;font-size:20px}
-.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}
-.chips span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:10px;padding:8px 4px;font-size:17px;text-align:center}
-.chips b{display:block;color:#FFE873;font-size:40px;line-height:1.1;font-family:Georgia,serif}
-.coach ul{margin:0;padding-left:22px;font-size:20px;color:#fff}
-.coach li{margin:5px 0}
-.coach li b{color:#FFE873}
-.cred{font-size:13px;color:var(--mute)}
-@media (max-width:1000px){.coach{grid-template-columns:1fr 1fr}.coach .ct2{grid-column:1/-1;order:-1}.coach figure{min-height:300px}}
-@media (max-width:560px){.coach .ct2{padding:18px 16px}.coach .cn{font-size:19px}.coach .cn b{font-size:42px}.coach .cs,.coach ul{font-size:17px}.chips{grid-template-columns:repeat(2,1fr)}.chips span{font-size:15.5px}.chips b{font-size:32px}.coach figure{min-height:220px}}
+.coach{background:#F8F6F1;border:1px solid var(--line);border-radius:12px;overflow:hidden;max-width:1100px}
+.coach img{display:block;width:100%;height:auto}
+.tl{position:relative;display:grid;grid-template-columns:repeat(6,1fr);margin:22px 0 10px}
+.tl::before{content:"";position:absolute;left:0;right:0;top:50%;height:3px;margin-top:-1.5px;background:var(--sub)}
+.tn{display:grid;grid-template-rows:1fr 48px 1fr;justify-items:center;text-align:center;position:relative}
+.tn .no{grid-row:2;width:48px;height:48px;background:var(--ink);color:#fff;font:700 26px Georgia,serif;display:flex;align-items:center;justify-content:center;border-radius:5px;z-index:1}
+.tn .tx{padding:0 6px}
+.tn.up .tx{grid-row:1;align-self:end;padding-bottom:32px}
+.tn.dn .tx{grid-row:3;align-self:start;padding-top:32px}
+.tn::after{content:"";position:absolute;left:50%;width:2px;height:26px;margin-left:-1px;background:var(--sub)}
+.tn.up::after{bottom:calc(50% + 24px)}.tn.dn::after{top:calc(50% + 24px)}
+.tn .dt{display:block;font-family:"Noto Serif TC",Georgia,serif;font-weight:700;font-size:24px;line-height:1.25;color:var(--ink)}
+.tn .ds{display:block;font-size:16.5px;color:var(--sub);margin-top:4px}
+.tn.hot .dt{color:var(--red)}.tn.hot .no{background:var(--red)}
+@media (max-width:820px){.tl{grid-template-columns:1fr;gap:14px}.tl::before{left:23px;right:auto;top:0;bottom:0;width:3px;height:auto;margin:0}
+.tn{grid-template-rows:auto;grid-template-columns:48px 1fr;justify-items:start;text-align:left;align-items:center;gap:14px}
+.tn .no{grid-row:1;grid-column:1}.tn.up .tx,.tn.dn .tx{grid-row:1;grid-column:2;padding:0;align-self:center}.tn::after{display:none}.tn .dt{font-size:21px}}
 .yts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:6px 0 10px}
 .ytc{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;padding-bottom:10px}
 .ytc:hover{border-color:var(--org)}
@@ -253,30 +253,20 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 <p class="kicker">政大 EMBA 戈壁挑戰隊・戈22</p>
 <h1>戈22 行事曆與團隊目標：<span class="sc">做自己的英雄，做團隊的靠山</span></h1>
 <p class="lead">訓練時間、每一堂團練的日期、海選與移地、團隊的四個目標和組織，都在這一份。日期如有調整，以這一頁與隊上通知為準。</p>
-<div class="keys">
-<div class="key"><div class="d">12/5（六）</div><div class="w">週六團練開始，06:00</div></div>
-<div class="key r"><div class="d">2/20（六）</div><div class="w">海選（暫定）</div></div>
-<div class="key o"><div class="d">9/27</div><div class="w">出征</div></div>
+<h3 class="vh">征途時程</h3>
+<div class="tl">
+<div class="tn up"><span class="no">1</span><div class="tx"><span class="dt">12/5（六）</span><span class="ds">週六團練開始，06:00</span></div></div>
+<div class="tn dn hot"><span class="no">2</span><div class="tx"><span class="dt">2/20（六）</span><span class="ds">海選（暫定）</span></div></div>
+<div class="tn up"><span class="no">3</span><div class="tx"><span class="dt">3/3（三）</span><span class="ds">固定團練：週三、週六</span></div></div>
+<div class="tn dn"><span class="no">4</span><div class="tx"><span class="dt">5 到 8 月</span><span class="ds">三次移地訓練</span></div></div>
+<div class="tn up hot"><span class="no">5</span><div class="tx"><span class="dt">9/27</span><span class="ds">出征</span></div></div>
+<div class="tn dn"><span class="no">6</span><div class="tx"><span class="dt">10 月</span><span class="ds">戈壁挑戰賽，121 公里</span></div></div>
 </div>
 <h3 class="vh">戈22 宣傳影片：121 公里太遠了嗎？六分鐘看懂玄奘之路戈壁挑戰賽</h3>
 <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/yf2nSocU-zw?rel=0" title="121 公里太遠了嗎？六分鐘看懂玄奘之路戈壁挑戰賽｜政大 EMBA 戈22" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p class="note">影片打不開的話，直接到 YouTube 看：<a href="https://www.youtube.com/watch?v=yf2nSocU-zw">youtube.com/watch?v=yf2nSocU-zw</a></p>
 <h3 class="vh">教練團</h3>
-<div class="coach">
-<figure><img src="img/coach_london2012.jpg" alt="張嘉哲在 2012 倫敦奧運男子馬拉松" loading="lazy"><figcaption>2012 倫敦奧運男子馬拉松</figcaption></figure>
-<div class="ct2">
-<p class="cn">總教練<b>張嘉哲</b></p>
-<p class="cs">奧運馬拉松國手・跑者肌地教練團</p>
-<div class="chips"><span><b>1</b> 屆奧運</span><span><b>2</b> 屆亞運</span><span><b>3</b> 屆世錦賽</span><span><b>14</b> 次國手</span></div>
-<ul>
-<li>2012 年在平壤跑出 <b>2:16:06</b>，拿到倫敦奧運門票</li>
-<li>2019 年廣州馬拉松個人最佳 <b>2:15:02</b></li>
-<li>50 公里全國紀錄保持人</li>
-</ul>
-</div>
-<figure><img src="img/coach_pyongyang2012.jpg" alt="張嘉哲在 2012 平壤萬景臺馬拉松終點" loading="lazy"><figcaption>2012 平壤萬景臺馬拉松</figcaption></figure>
-</div>
-<p class="note cred">照片來源：維基共享資源。倫敦奧運：Matt Kieffer，CC BY-SA 2.0，經裁切；平壤：Shih-Chung Cheng，公有領域，經裁切。</p>
+<div class="coach"><img src="img/coach_team.jpg" alt="跑者肌地助理教練群，總教練張嘉哲" loading="lazy"></div>
 <h3 class="vh">加入我們</h3>
 <div class="links">
 <a class="lk line" href="https://line.me/ti/g/_D2jxDgUFq" target="_blank" rel="noopener"><img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAIAAAAG+WgKAAAEDklEQVR4nO3dzY3QOhhAUUC0wJ4C6L8SCmBPEcMeS8iyrmMHnbN8mpdkhitLn/Ljzx8fH5+g8+X0BfC/kRQxSRGTFDFJEZMUMUkRkxQxSRGTFDFJEfs680M/vn/bfR3/8PPX77/+y3g948/MqH6vmStcO87otn+LkVWKmKSISYqYpIhJitjUxDdam7BmzEw0+yaj6shrU+raJHv232JklSImKWKSIiYpYpIitjjxjfZNWDPnWpuMxuPMHPnsvDnj7NmtUsQkRUxSxCRFTFLEsonvSdVTlDNHHlXzVHU38zZWKWKSIiYpYpIiJilir5z4RtX9u7Nuu541VilikiImKWKSIiYpYtnE9+S0cv87emvXU82kZydHqxQxSRGTFDFJEZMUscWJ7+wXI0drU9ja11Sq6zn71t4+VilikiImKWKSIiYpYp//jx3Y75/LRt7jgymSIiYpYpIiJiliUxPfvp0FZs41enL3vSe/uLL2N9z3f60d2SpFTFLEJEVMUsQkRWxx4lvz5C51M85OqU/OdzOqSdYqRUxSxCRFTFLEJEUse6pz39tkt+0wXs2tM0dec/YZV6sUMUkRkxQxSRGTFLHsHt/Z5zz3Xc8bvwt69v1EqxQxSRGTFDFJEZMUscVvdd7/PZN9890bv6by5HuFVilikiImKWKSIiYpYlMT375d4arnIc++DzhzPferrtkqRUxSxCRFTFLEJEUs24H9tnfiqnON9k2OM8ep/hr7jmyVIiYpYpIiJilikiK2cT++fW/AzZzr7HHWzjXj7DdhZliliEmKmKSISYqYpIhN3eN7cja5/5uW1V/jjd/89B4fB0iKmKSISYqYpIgtvsd39v7dzJH3XeH9T4fO2PemoVWKmKSISYqYpIhJilh2j2/fPgL77LuD9uQ09+RvMcMqRUxSxCRFTFLEJEXs0R3Yn3wa8/79+Ga88e6hVYqYpIhJipikiEmKWLYD++jJ+3dv/Obn6Lb7m2u/hVWKmKSISYqYpIhJitjGb3Xus+8e39nvXp6dHKsZ0CpFTFLEJEVMUsQkRWzjtzorTz6ReP8zk2tn91QnLyYpYpIiJilikiK2uAP72V3qzt5lO/vE5m37A46sUsQkRUxSxCRFTFLEFie+0dkvnIz23Ylbezp03+6EM/ZNsiOrFDFJEZMUMUkRkxSxbOI7q5rC3nj2metZ+xlfbuEKkiImKWKSIiYpYq+c+Pbd+ars2wlibQpbO7svt3AFSRGTFDFJEZMUsWziO/t9lSd36Juxb2eKteczPdXJi0mKmKSISYqYpIgtTnxnv9659tTivv3W9539yTl65B4fV5AUMUkRkxQxSRF75X583MwqRUxSxCRFTFLEJEVMUsQkRUxSxCRFTFLEJEXsD3CRJGFMtbO+AAAAAElFTkSuQmCC" alt="LINE 戈22 挑戰群 的 QR Code" width="132" height="132"><div class="lt"><b>LINE　戈22 挑戰群</b><span>隊上的 LINE 群組：公告、訓練通知、大家互相打氣</span><i>加入群組 →</i></div></a>
