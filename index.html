@@ -230,7 +230,7 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 .coach .clg span{font-size:15.5px;color:var(--sub)}
 @media (max-width:1000px){.coach{grid-template-columns:220px minmax(0,1fr)}.coach .clg{grid-column:1/-1;flex-direction:row;justify-content:center;gap:12px;padding:0 16px 14px;border-top:1px solid var(--line);padding-top:10px}.coach .clg img{width:90px}}
 @media (max-width:560px){.coach{grid-template-columns:1fr}.coach .cph{width:60%;margin:0 auto;order:2}.coach .ct2{padding:18px 16px 0}.coach .clg{order:3}.coach .cn b{font-size:44px}.coach ul{font-size:17px}.chips{grid-template-columns:repeat(2,1fr)}.chips b{font-size:32px}}
-.tl{position:relative;display:grid;grid-template-columns:repeat(6,1fr);margin:22px 0 10px}
+.tl{position:relative;display:grid;grid-template-columns:repeat(7,1fr);margin:22px 0 10px}
 .tl::before{content:"";position:absolute;left:0;right:0;top:50%;height:3px;margin-top:-1.5px;background:var(--sub)}
 .tn{display:grid;grid-template-rows:1fr 48px 1fr;justify-items:center;text-align:center;position:relative}
 .tn .no{grid-row:2;width:48px;height:48px;background:var(--ink);color:#fff;font:700 26px Georgia,serif;display:flex;align-items:center;justify-content:center;border-radius:5px;z-index:1}
@@ -261,7 +261,7 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 @keyframes tlup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @keyframes tldn{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
 @keyframes tlfade{from{opacity:0}to{opacity:1}}
-.tl::before{transform-origin:left center;animation:tlx 2s ease-out both}
+.tl::before{transform-origin:left center;animation:tlx 2.3s ease-out both}
 .tn .no{animation:tlpop .45s ease-out both}
 .tn.up .tx{animation:tlup .5s ease-out both}.tn.dn .tx{animation:tldn .5s ease-out both}
 .tn::after{animation:tlfade .3s ease-out both}
@@ -271,6 +271,7 @@ table.tb{border-collapse:collapse;width:100%;font-size:17px;background:#fff;marg
 .tn:nth-child(4) .no{animation-delay:1.11s}.tn:nth-child(4)::after{animation-delay:1.31s}.tn:nth-child(4) .tx{animation-delay:1.41s}
 .tn:nth-child(5) .no{animation-delay:1.43s}.tn:nth-child(5)::after{animation-delay:1.63s}.tn:nth-child(5) .tx{animation-delay:1.73s}
 .tn:nth-child(6) .no{animation-delay:1.75s}.tn:nth-child(6)::after{animation-delay:1.95s}.tn:nth-child(6) .tx{animation-delay:2.05s}
+.tn:nth-child(7) .no{animation-delay:2.07s}.tn:nth-child(7)::after{animation-delay:2.27s}.tn:nth-child(7) .tx{animation-delay:2.37s}
 @media (max-width:820px){.tl::before{transform-origin:center top;animation-name:tly}.tn.up .tx,.tn.dn .tx{animation-name:tlfade}}
 @media (prefers-reduced-motion:reduce){.tl::before,.tn .no,.tn .tx,.tn::after{animation:none!important}}
 @media print{.tl::before,.tn .no,.tn .tx,.tn::after{animation:none!important}}
@@ -368,8 +369,9 @@ table.cal.big,.cal.big tbody,.cal.big tr,.cal.big td{display:block;width:auto}
 <div class="tn dn hot"><span class="no">2</span><div class="tx"><span class="dt">2/20（六）</span><span class="ds">海選（暫定）</span></div></div>
 <div class="tn up"><span class="no">3</span><div class="tx"><span class="dt">3/3（三）</span><span class="ds">固定團練：週三、週六</span></div></div>
 <div class="tn dn"><span class="no">4</span><div class="tx"><span class="dt">5 到 8 月</span><span class="ds">三次移地訓練</span></div></div>
-<div class="tn up hot"><span class="no">5</span><div class="tx"><span class="dt">9/27</span><span class="ds">出征</span></div></div>
-<div class="tn dn"><span class="no">6</span><div class="tx"><span class="dt">10 月</span><span class="ds">戈壁挑戰賽，121 公里</span></div></div>
+<div class="tn up"><span class="no">5</span><div class="tx"><span class="dt">6 月</span><span class="ds">棲蘭馬拉松 30 公里</span></div></div>
+<div class="tn dn hot"><span class="no">6</span><div class="tx"><span class="dt">9/27</span><span class="ds">出征</span></div></div>
+<div class="tn up"><span class="no">7</span><div class="tx"><span class="dt">10 月</span><span class="ds">戈壁挑戰賽，121 公里</span></div></div>
 </div>
 <h3 class="vh">戈22 宣傳影片：121 公里太遠了嗎？六分鐘看懂玄奘之路戈壁挑戰賽</h3>
 <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/yf2nSocU-zw?rel=0" title="121 公里太遠了嗎？六分鐘看懂玄奘之路戈壁挑戰賽｜政大 EMBA 戈22" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -411,7 +413,7 @@ table.cal.big,.cal.big tbody,.cal.big tr,.cal.big td{display:block;width:auto}
 <a class="lk app" href="https://apps.apple.com/tw/app/nccu-gobitrack/id6828919860" target="_blank" rel="noopener"><img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAIAAADdBSngAAAE8UlEQVR4nO3dwY3jNgBA0UyQFvaeAtJ/JSkg9xThLYBBhiBI6tv73tm2NOMPAjQl8ev1ev0GPb8/fQLw36RJlDSJkiZR0iRKmkRJkyhpEiVNoqRJlDSJ+mPmRX/9+eP0efyPv//599vX7DrDmWOtWTvDtb/95n9szcwZGjWJkiZR0iRKmkRJk6ipGfqoNpMd3TzDtWON75r522eOvnaGte/UqEmUNImSJlHSJEqaRC3O0Efn1ohnjnXuc879YrA2H595za659s3vdGTUJEqaREmTKGkSJU2its3Q39HayvKumfWMc+vsfUZNoqRJlDSJkiZR0iTqQ2bo51bVd71r7Vr0m6v8NUZNoqRJlDSJkiZR0iRq2wy9v0pbu8N911z73H/+2e/UqEmUNImSJlHSJEqaRC3O0Gvrts+uUN98etu5Y9W+U6MmUdIkSppESZMoaRI1NUPvr4+Pds1bd6nd897/To2aREmTKGkSJU2ipEnU4n7oN++GHo+1dvSb57xr1nzunG9+X2uMmkRJkyhpEiVNoqRJ1MNr6M/uklZbZ689g/3cmv7M32XUJEqaREmTKGkSJU2ivl6v17cvenbH7doe5TOfMzr3q8Kam/fpr52zUZMoaRIlTaKkSZQ0iVqcoa+5uQPajJvPYRvV7h0YPXt0oyZR0iRKmkRJkyhpErX4LPdz87tza7v9Z7U9u0N67YlzRk2ipEmUNImSJlHSJOrqGvro3OrzzLtm3JxHPztnv7mqbg2dNyZNoqRJlDSJkiZRUzP00bkrvUf9+eaMm79FzHzOTe5D56NIkyhpEiVNoqRJ1OJuazOvefZJ6TPHenbWvEvtXnW7rfHhpEmUNImSJlHSJGrbs9z7V8LvOvrNq+VH59517qnsa+ds1CRKmkRJkyhpEiVNot5gP/Rdq7Q359przj1b79x+8TPvWmPUJEqaREmTKGkSJU2itj0p7uaq+szRZ9T2cRvdnEfX5uxGTaKkSZQ0iZImUdIkanG3tTW1vcVr+6HP2HX9wJpzq/wjoyZR0iRKmkRJkyhpErXtWe6jm3t535zXzxz95q5ko5vnbD90fjnSJEqaREmTKGkSdfBJcTefcP7svH7tk2/+XnHznHe9y6hJlDSJkiZR0iRKmkS9wbPcZzx7vfo57/i7x8h96HwUaRIlTaKkSZQ0idp2H3r/vu/RzR3Qbj4F/eaxzjFqEiVNoqRJlDSJkiZRV58UN6M2R961l9m5HeL6z6lzlTsfRZpESZMoaRIlTaIO7oc+867aLmlrbv6qcHN1fuaTz13hYNQkSppESZMoaRIlTaKmZui1e8zPXaG9a0Z8buV913dxbma965ONmkRJkyhpEiVNoqRJ1OJV7jfnyGuvWVvBHz/52bvp+/vTzXyyq9z5KNIkSppESZMoaRK17T702m7aM8e6ebf4mnO/M+xy7m83ahIlTaKkSZQ0iZImUbknxa3ZNU/c9TtDbW/x0dqx1l6zxqhJlDSJkiZR0iRKmkR9yAz95nXmu87n3NFn3LxefY1RkyhpEiVNoqRJlDSJOrgf+jnnnmd+8+r0c598c191z3LnlyNNoqRJlDSJkiZRX6/X69sX1Z7lfnMevWut+eb5zHzyzT3aPMudjyJNoqRJlDSJkiZRUzN0uM+oSZQ0iZImUdIkSppESZMoaRIlTaKkSZQ0iZImUT8BL6X8i+FnieIAAAAASUVORK5CYII=" alt="App NCCU GobiTrack 的 QR Code" width="132" height="132"><div class="lt"><b>App　NCCU GobiTrack</b><span>訓練紀錄：課表、出席、跑量。iPhone 從 App Store 安裝；Android 安裝檔另發</span><i>到 App Store →</i></div></a>
 <a class="lk yt2" href="https://www.youtube.com/@政大EMBA戈壁" target="_blank" rel="noopener"><img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAIAAAAG+WgKAAAEI0lEQVR4nO3dy40UMQBAQUCkwJ0AyD8SAuBOEMMdS2BZz27PquqI5tO7+2Rhudv+/Hq9PkHny9MXwEcjKWKSIiYpYpIiJilikiImKWKSIiYpYpIi9nXmRT++f9t9Hf/w89fvv/5lvJ6Z13zUbz9pvJ6RUYqYpIhJipikiEmK2NSMbzTzP/81azOamXc9O3ebuZ5nP2e09rMbpYhJipikiEmKmKSILc74Rmuzg7XZytrcbc3aHHDtXdVPcfJvMTJKEZMUMUkRkxQxSRHLZnwnVbOnZ1fH9s1Sn2WUIiYpYpIiJilikiL2ljO+fSto1T2lM3O3Z5/I28coRUxSxCRFTFLEJEUsm/E9uz61NsO67em/atXv2b+FUYqYpIhJipikiEmK2OKM79n1qbU51zu+ZsZta4VGKWKSIiYpYpIiJiliUzO+j/F82aiac1V3ma59122MUsQkRUxSxCRFTFLEFs/jO7mD5cznzHh2j821b1/7rrV3VVdolCImKWKSIiYpYpIidt3OLbediHfyevbtAHPyJzVKEZMUMUkRkxQxSRFbvKtz384k1WtGJ088v3/3zmqeODJKEZMUMUkRkxQxSRFbXOPbdyfhydWofbupVJ5d31z76xiliEmKmKSISYqYpIhld3U+u1/lmmd33Tx5Avvaip41Pq4gKWKSIiYpYpIi9vn1ev33RftW62ac3HXk5LeffNdo3545RilikiImKWKSIiYpYoszvtG+/TNnvqtaGdw3S63cv0uqUYqYpIhJipikiEmK2Mbn+G775BnveE/pyW+fYZQiJilikiImKWKSIrY446vWlU7uw/nsvZf77imdedfJZwaNUsQkRUxSxCRFTFLEFk9n2Gffyte+3Slnvuu25xz3rWYapYhJipikiEmKmKSITc34qrW5286kG+1bKzx5YuDMJ++bgRqliEmKmKSISYqYpIgdXeM7uc/kvnXAfacBzqjOUNjHKEVMUsQkRUxSxCRFbGqvztHJ/UMq++7qPLlb5j7W+LiUpIhJipikiEmK2OKM71n3rxVW13PyzIsZTmfgAZIiJilikiImKWKLz/GdVN1pOXM/5Mk9SNfcv7eMUYqYpIhJipikiEmK2HXn8Z18Jq66h/Pkqegnn9pb+/0YpYhJipikiEmKmKSILc74RvvudazetfY5+55YnPGOz0sapYhJipikiEmKmKSIZTO+k6rZ5bN3q558HnDfjjQjoxQxSRGTFDFJEZMUsbec8Y327dMy8znVeYUz3zXzmpO7xIyMUsQkRUxSxCRFTFLEshnfyefL9u1VUtn3rN/J67FzC1eQFDFJEZMUMUkRW5zx3XY/5MnnAW878fy26zFKEZMUMUkRkxQxSRF7y/P4uJlRipikiEmKmKSISYqYpIhJipikiEmKmKSISYrYH6LDMlzEpPOFAAAAAElFTkSuQmCC" alt="YouTube 政大EMBA戈壁 的 QR Code" width="132" height="132"><div class="lt"><b>YouTube　政大EMBA戈壁</b><span>每週一支教學影片：熱身、收操、跑步入門</span><i>看頻道 →</i></div></a>
 </div>
-<div class="foot"><span>政大 EMBA 戈22 籌備會 ｜ 更新日 2026-11-23</span><span></span></div>
+<div class="foot"><span>政大 EMBA 戈22 籌備會 ｜ 更新日 2026-11-24</span><span></span></div>
 </section>
 
 <section class="slide" id="cal" data-g="cal">
