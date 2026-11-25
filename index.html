@@ -408,6 +408,20 @@ svg.x-i{width:26px;height:26px;stroke:#FFE873;fill:none;stroke-width:2;stroke-li
  .x-stp:not(:last-child):after{right:auto;left:50%;top:auto;bottom:-23px;margin:0 0 0 -10px;border:10px solid transparent;border-top:14px solid var(--org);border-bottom:0;animation:none}
 }
 @media(prefers-reduced-motion:reduce){.x-sum div,.x-stp,.x-stp:after{animation:none!important}}
+/* 每週訓練表：手機上「內容」獨立一行 */
+@media (max-width:560px){
+table.cal:not(.big),table.cal:not(.big) tbody{display:block}
+table.cal:not(.big){border:1px solid var(--line);border-bottom:0}
+table.cal:not(.big) tr{display:flex;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--line)}
+table.cal:not(.big) tr.hot{background:var(--hot)}
+table.cal:not(.big) th,table.cal:not(.big) td{border:0}
+table.cal:not(.big) th{align-self:stretch}
+table.cal:not(.big) .w{flex:0 0 42px;width:auto}
+table.cal:not(.big) .d{flex:0 0 92px;width:auto}
+table.cal:not(.big) .k{flex:1 1 0;width:auto;white-space:nowrap}
+table.cal:not(.big) th:last-child,table.cal:not(.big) .ct:empty{display:none}
+table.cal:not(.big) .ct{flex:0 0 100%;padding:4px 8px 8px 47px;line-height:1.55}
+}
 </style>
 </head>
 <body>
@@ -532,10 +546,10 @@ svg.x-i{width:26px;height:26px;stroke:#FFE873;fill:none;stroke-width:2;stroke-li
 <section class="slide" id="w1" data-g="week">
 <p class="kicker"><span class="tag2 t-blue">每週訓練時間</span>2／6　前期</p>
 <h2>每一堂的日期：12 到 1 月，每週六 06:00</h2>
-<p class="note">每一堂團練一列，最左邊是第幾週（W1 是 12/5 那一週）。「內容」那一欄在練完之後補上。</p><div class="cols"><div><h3 class="mh">2026 年 12 月</h3>
+<p class="note">每一堂團練一列，最左邊是第幾週（W1 是 12/5 那一週）。「內容」那一欄陸續補上。</p><div class="cols"><div><h3 class="mh">2026 年 12 月</h3>
 <table class="cal"><tr><th class="w">週</th><th class="d">日期</th><th class="k">時間</th><th>內容</th></tr>
-<tr class="r-sat" data-d="2026-12-05"><td class="w">W1</td><td class="d">12/5（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
-<tr class="r-sat" data-d="2026-12-12"><td class="w">W2</td><td class="d">12/12（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
+<tr class="r-sat" data-d="2026-12-05"><td class="w">W1</td><td class="d">12/5（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct">1. 動態熱身 30 分鐘<br>2. 分組持續跑 40 分鐘<br>3. 漸速跑訓練 10 分鐘<br>4. 徒手肌力 30 分鐘<br>5. 伸展放鬆 10 分鐘<br><span class="imp">提醒：開始準備自己的按摩滾筒和瑜珈墊，第二週會教滾筒放鬆動作</span></td></tr>
+<tr class="r-sat" data-d="2026-12-12"><td class="w">W2</td><td class="d">12/12（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct">教滾筒放鬆動作，請帶自己的按摩滾筒和瑜珈墊</td></tr>
 <tr class="r-sat" data-d="2026-12-19"><td class="w">W3</td><td class="d">12/19（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
 <tr class="r-sat" data-d="2026-12-26"><td class="w">W4</td><td class="d">12/26（六）</td><td class="k"><span class="day sat">週六</span> 06:00–08:00</td><td class="ct"></td></tr>
 </table></div><div><h3 class="mh">2027 年 1 月</h3>
