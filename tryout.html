@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>海選支援分工表｜政大 EMBA 戈22</title>
+<style>
+:root{--ink:#2B1F14;--sub:#5A4A3A;--mute:#8A7A66;--line:#D9CDB8;--paper:#F6F1E7;--card:#FFFDF8;--red:#A33B2B;--org:#C8652B;--blue:#3C6E8F;--green:#1F7A6B;--sand:#EFE6D6;--hot:#FFF3D6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;font-size:17px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding:22px 20px 60px}
+.back{display:inline-block;color:var(--blue);font-weight:700;text-decoration:none;margin-bottom:6px}
+h1{font-family:"Noto Serif TC",Georgia,serif;font-size:36px;line-height:1.25;margin:4px 0 6px}
+.lead{color:var(--sub);margin:0 0 20px}
+h2{font-family:"Noto Serif TC",Georgia,serif;font-size:27px;margin:40px 0 14px;padding-left:14px;border-left:8px solid var(--org)}
+.sum{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sum div{background:var(--ink);color:#fff;border-radius:12px;padding:14px 16px}
+.sum b{display:block;font-family:Georgia,serif;font-size:38px;line-height:1.1;color:#FFE873}
+.sum span{font-size:15px}
+.sum .need{background:var(--red)}
+/* 當天流程 */
+.day{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;position:relative}
+.day:before{content:"";position:absolute;left:0;right:0;top:19px;height:4px;background:var(--line);border-radius:2px}
+.st{position:relative;text-align:center;padding-top:44px;animation:up .5s both}
+.st:nth-child(2){animation-delay:.1s}.st:nth-child(3){animation-delay:.2s}.st:nth-child(4){animation-delay:.3s}.st:nth-child(5){animation-delay:.4s}.st:nth-child(6){animation-delay:.5s}
+.st:before{content:"";position:absolute;left:50%;top:8px;width:26px;height:26px;margin-left:-13px;border-radius:50%;background:var(--org);border:4px solid var(--paper);box-shadow:0 0 0 2px var(--org)}
+.st.hot:before{background:var(--red);box-shadow:0 0 0 2px var(--red)}
+.st b{display:block;font-family:Georgia,serif;font-size:24px;line-height:1.2}
+.st span{display:block;font-weight:700}
+.st i{display:block;font-style:normal;font-size:14px;color:var(--mute)}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* 分工 */
+.grp{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.gh{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--sand);border-bottom:1px solid var(--line)}
+.gh .ic{flex:0 0 44px;width:44px;height:44px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center}
+.gh .ic svg{width:26px;height:26px;stroke:#FFE873;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.gh b{font-family:"Noto Serif TC",Georgia,serif;font-size:22px}
+.gh em{margin-left:auto;font-style:normal;font-size:14px;color:var(--mute)}
+table{border-collapse:collapse;width:100%}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+thead th{font-size:14px;color:var(--mute);font-weight:700;background:var(--card)}
+td.n{width:52px;font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--org)}
+td.it{width:24%;font-weight:700}
+td.pre{color:var(--sub)}
+td.o21{width:20%;color:var(--blue)}
+td.o22{width:18%}
+td.o22 span{display:inline-block;min-width:96px;border:2px dashed var(--red);border-radius:6px;padding:0 10px;color:var(--red);font-weight:700;font-size:14.5px;text-align:center;background:#fff}
+.new{display:inline-block;background:var(--green);color:#fff;border-radius:4px;padding:0 6px;font-size:12.5px;font-weight:700;margin-left:6px;vertical-align:2px}
+.src{margin-top:26px;color:var(--mute);font-size:14px}
+@media(max-width:760px){
+ body{font-size:16px}.wrap{padding:16px 16px 48px}
+ h1{font-size:28px}h2{font-size:23px;margin-top:32px}
+ .sum{grid-template-columns:repeat(2,1fr)}
+ .day{grid-template-columns:1fr;gap:0}
+ .day:before{left:19px;right:auto;top:0;bottom:0;width:4px;height:auto}
+ .st{text-align:left;padding:6px 0 14px 52px}
+ .st:before{left:8px;top:8px;margin-left:0}
+ .st b{display:inline;margin-right:8px}.st span{display:inline}
+ thead{display:none}
+ table,tbody,tr,td{display:block;width:auto!important}
+ tr{padding:10px 14px;border-bottom:1px solid var(--line);position:relative}
+ tr:last-child{border-bottom:0}
+ td{padding:0;border:0}
+ td.n{position:absolute;left:14px;top:10px}
+ td.it{padding-left:34px;font-size:17px}
+ td.pre{margin-top:2px}
+ td.o21:before{content:"戈21：";color:var(--mute)}
+ td.o21:empty{display:none}
+ td.o22{margin-top:6px}
+ td.o22:before{content:"戈22 負責人 ";color:var(--mute);font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.st{animation:none}}
+@media print{.back{display:none}.grp{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="./#cal">← 回行事曆</a>
+<h1>海選支援分工表</h1>
+<p class="lead">2/20（六）海選（暫定）：12 公里，另有 5 公里體驗組。當天需要學長姊與工作人員支援的項目。</p>
+
+<div class="sum">
+ <div><b>21</b><span>項準備工作</span></div>
+ <div><b>6</b><span>大類</span></div>
+ <div><b>2/20</b><span>海選（暫定）</span></div>
+ <div class="need"><b>21</b><span>項待認領</span></div>
+</div>
+
+<h2>當天流程（草案）</h2>
+<div class="day">
+ <div class="st"><b>05:30</b><span>報到</span><i>發號碼布、訓練衣、晶片</i></div>
+ <div class="st"><b>06:00</b><span>熱身操</span><i>教練</i></div>
+ <div class="st hot"><b>06:15</b><span>出發</span><i>12 公里，折返信物</i></div>
+ <div class="st"><b>08:00</b><span>收操、公布成績</span><i>晶片計時</i></div>
+ <div class="st"><b>08:30</b><span>說明</span><i>分隊、團練、收費</i></div>
+ <div class="st"><b>09:00</b><span>合照、散會</span><i>&nbsp;</i></div>
+</div>
+
+<h2>支援項目與負責人</h2>
+
+<div class="grp">
+ <div class="gh"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/><path d="M8 12h2l1-2 2 4 1-2h2"/></svg></span><b>醫療與安全</b><em>4 項</em></div>
+ <table><thead><tr><th></th><th>準備項目</th><th>前置作業</th><th>戈21 做法（參考）</th><th>戈22 負責人</th></tr></thead><tbody>
+ <tr><td class="n">1</td><td class="it">AED 工作人員</td><td class="pre">借 AED，找有急救證照的人 4 位</td><td class="o21">施齡依（4 位）</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">14</td><td class="it">醫藥箱</td><td class="pre">折返點與終點各一箱</td><td class="o21">Molin</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">19</td><td class="it">醫療<span class="new">戈22 新增</span></td><td class="pre">救護員全程待命，和 AED 一起安排</td><td class="o21"></td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">5</td><td class="it">買保險</td><td class="pre">活動當天的意外險</td><td class="o21">玉玲；Melody、Ivy</td><td class="o22"><span>待認領</span></td></tr>
+ </tbody></table>
+</div>
+
+<div class="grp">
+ <div class="gh"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2 4 2 4H5"/></svg></span><b>起跑與賽道</b><em>6 項</em></div>
+ <table><thead><tr><th></th><th>準備項目</th><th>前置作業</th><th>戈21 做法（參考）</th><th>戈22 負責人</th></tr></thead><tbody>
+ <tr><td class="n">17</td><td class="it">場地<span class="new">戈22 新增</span></td><td class="pre">動物園還是河濱；河濱要申請與場勘</td><td class="o21"></td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">2</td><td class="it">鳴槍的道具</td><td class="pre">起跑發令用具</td><td class="o21">安安；韋志、Jerry</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">11</td><td class="it">折返點（橡皮圈）</td><td class="pre">折返信物與計時點</td><td class="o21">眾點；小布、三爪</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">12</td><td class="it">折返點工作人員</td><td class="pre">折返點發信物、計時</td><td class="o21">眾點；小布、三爪</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">13</td><td class="it">騎腳踏車</td><td class="pre">機動與前導腳踏車</td><td class="o21">三爪；ERIC、Molin、Jerry</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">15</td><td class="it">配速氣球</td><td class="pre">配速員與氣球</td><td class="o21">BC 隊，12 位配速</td><td class="o22"><span>待認領</span></td></tr>
+ </tbody></table>
+</div>
+
+<div class="grp">
+ <div class="gh"><span class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6M9 18h3"/></svg></span><b>報名與報到</b><em>4 項</em></div>
+ <table><thead><tr><th></th><th>準備項目</th><th>前置作業</th><th>戈21 做法（參考）</th><th>戈22 負責人</th></tr></thead><tbody>
+ <tr><td class="n">18</td><td class="it">報名表單<span class="new">戈22 新增</span></td><td class="pre">報名平台與欄位：尺寸、班別、緊急聯絡人</td><td class="o21"></td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">10</td><td class="it">報名、收錢、晶片計時</td><td class="pre">計時廠商：帳篷兩頂、號碼布加晶片</td><td class="o21">惠卿；眾點資訊</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">9</td><td class="it">海選衣服</td><td class="pre">下單製作，海選當天發</td><td class="o21">育惠、安安（200 件）</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">16</td><td class="it">報到、發衣服人員</td><td class="pre">報到桌、發訓練衣與號碼布</td><td class="o21">玉玲、映柔、惠卿</td><td class="o22"><span>待認領</span></td></tr>
+ </tbody></table>
+</div>
+
+<div class="grp">
+ <div class="gh"><span class="ic"><svg viewBox="0 0 24 24"><path d="M8 3h8l-1 6a3 3 0 0 1-6 0z"/><path d="M12 12v6M8 21h8"/></svg></span><b>補給與早餐</b><em>3 項</em></div>
+ <table><thead><tr><th></th><th>準備項目</th><th>前置作業</th><th>戈21 做法（參考）</th><th>戈22 負責人</th></tr></thead><tbody>
+ <tr><td class="n">6</td><td class="it">補給人員</td><td class="pre">起終點補給站人員</td><td class="o21">Melody；育惠、安安</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">7</td><td class="it">補給品</td><td class="pre">水、運動飲料、水果，列清單附圖</td><td class="o21">湯馬</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">8</td><td class="it">早餐</td><td class="pre">海選後的早餐</td><td class="o21">Fotin</td><td class="o22"><span>待認領</span></td></tr>
+ </tbody></table>
+</div>
+
+<div class="grp">
+ <div class="gh"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l2-3h4l2 3"/><circle cx="12" cy="13.5" r="3.5"/></svg></span><b>攝影與宣傳</b><em>2 項</em></div>
+ <table><thead><tr><th></th><th>準備項目</th><th>前置作業</th><th>戈21 做法（參考）</th><th>戈22 負責人</th></tr></thead><tbody>
+ <tr><td class="n">3</td><td class="it">攝影</td><td class="pre">起跑、折返、終點的攝影</td><td class="o21">韋志；玉玲</td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">4</td><td class="it">發新聞稿</td><td class="pre">校友會與 EMBA 辦公室發稿</td><td class="o21">Yvonne</td><td class="o22"><span>待認領</span></td></tr>
+ </tbody></table>
+</div>
+
+<div class="grp">
+ <div class="gh"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></span><b>教練與成績</b><em>2 項</em></div>
+ <table><thead><tr><th></th><th>準備項目</th><th>前置作業</th><th>戈21 做法（參考）</th><th>戈22 負責人</th></tr></thead><tbody>
+ <tr><td class="n">21</td><td class="it">教練當天分工<span class="new">戈22 新增</span></td><td class="pre">熱身、帶跑、收操</td><td class="o21"></td><td class="o22"><span>待認領</span></td></tr>
+ <tr><td class="n">20</td><td class="it">成績與分隊公告<span class="new">戈22 新增</span></td><td class="pre">當天公布成績，之後公布分隊</td><td class="o21"></td><td class="o22"><span>待認領</span></td></tr>
+ </tbody></table>
+</div>
+
+<p class="src">項次 1 到 16 來自戈21 海選「前置工作與人員安排」，17 到 21 是戈22 新增。「戈21 做法」欄先寫負責人，分號後是執行人員。更新日 2026-11-25</p>
+</div>
+</body>
+</html>
