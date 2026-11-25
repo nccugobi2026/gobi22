@@ -351,13 +351,70 @@ table.cal.big,.cal.big tbody,.cal.big tr,.cal.big td{display:block;width:auto}
 @media (max-width:820px){.gt{padding:18px 14px}.gtc{grid-template-columns:1fr;gap:26px}.gtc img{max-width:220px}.gth b{font-size:26px}.gth span{font-size:15.5px}.gth img{width:60px;height:60px;border-radius:14px}.gtc b{font-size:21px}.gta a{display:block;margin:4px 0}}
 .tbd{display:inline-block;background:var(--sand);color:var(--sub);border:1px solid var(--line);border-radius:4px;padding:0 6px;font-size:13px;font-weight:700;margin-left:6px;vertical-align:1px;white-space:nowrap}
 .cal .td a.tlk{color:var(--blue);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+/* 醫療保險分頁 */
+.vh small{font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;font-size:15px;font-weight:400;color:var(--mute);margin-left:8px}
+svg.x-i{width:26px;height:26px;stroke:#FFE873;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@keyframes xup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* 數字 */
+.x-sum{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.x-sum div{background:var(--ink);color:#fff;border-radius:12px;padding:14px 16px;animation:xup .5s both}
+.x-sum div:nth-child(2){animation-delay:.1s}.x-sum div:nth-child(3){animation-delay:.2s}.x-sum div:nth-child(4){animation-delay:.3s}
+.x-sum b{display:block;font-family:Georgia,serif;font-size:38px;line-height:1.1;color:#FFE873}
+.x-sum b small{font-size:17px;margin-left:3px}
+.x-sum span{font-size:15px}
+.x-sum .x-lim{background:var(--red)}
+.x-unit{margin:8px 0 0;font-size:14.5px;color:var(--mute)}
+/* 卡片 */
+.x-g2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.x-g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.x-cd{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.x-cd .x-ic{width:48px;height:48px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.x-cd b.x-t{display:block;font-family:"Noto Serif TC",Georgia,serif;font-size:23px;line-height:1.3}
+.x-cd p{margin:4px 0 0;color:var(--sub)}
+.x-cd.x-no{border-color:var(--red);background:#FFF6F3}
+.x-cd.x-no .x-ic{background:var(--red)}
+.x-cd ul{margin:6px 0 0;padding-left:20px;color:var(--sub)}
+.x-cd li{margin:2px 0}
+#med mark{background:var(--hot);color:var(--red);font-weight:700;padding:0 4px;border-radius:3px}
+/* 流程 */
+.x-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.x-stp{position:relative;background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:16px 16px 18px;animation:xup .5s both}
+.x-stp:nth-child(2){animation-delay:.15s}.x-stp:nth-child(3){animation-delay:.3s}.x-stp:nth-child(4){animation-delay:.45s}
+.x-stp:not(:last-child):after{content:"";position:absolute;right:-21px;top:50%;margin-top:-10px;border:10px solid transparent;border-left:14px solid var(--org);border-right:0;animation:xnudge 1.4s ease-in-out infinite}
+@keyframes xnudge{50%{transform:translateX(5px)}}
+.x-stp .x-n{display:inline-block;width:40px;height:40px;line-height:40px;border-radius:50%;background:var(--org);color:#fff;font-family:Georgia,serif;font-size:22px;font-weight:700;text-align:center}
+.x-stp b{display:block;font-family:"Noto Serif TC",Georgia,serif;font-size:21px;line-height:1.3;margin-top:8px}
+.x-stp p{margin:6px 0 0;color:var(--sub);font-size:16px}
+.x-stp.x-end{background:var(--green);border-color:var(--green);color:#fff}
+.x-stp.x-end .x-n{background:#fff;color:var(--green)}
+.x-stp.x-end p{color:#fff}
+.x-btn{display:inline-block;background:var(--sand);border:1px solid var(--line);border-radius:6px;padding:0 8px;margin:2px 0;font-weight:700;color:var(--ink);white-space:nowrap}
+.x-path{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin-top:6px}
+.x-nw{white-space:nowrap}
+.x-path i{font-style:normal;color:var(--org);font-weight:700}
+.x-note{margin:12px 0 0;font-size:14.5px;color:var(--mute)}
+/* 原文 */
+#med details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-top:12px;overflow:hidden}
+#med summary{cursor:pointer;padding:12px 16px;font-weight:700;background:var(--sand)}
+.x-orig{padding:14px 18px;color:var(--sub);font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Microsoft JhengHei",sans-serif;font-size:16px;line-height:1.8}
+.x-orig p{margin:0 0 10px}.x-orig p:last-child{margin:0}
+.x-orig b{color:var(--ink)}
+.x-src{margin-top:26px;color:var(--mute);font-size:14px}
+@media(max-width:760px){
+ .vh small{display:block;margin:2px 0 0}
+ .x-sum{grid-template-columns:repeat(2,1fr)}
+ .x-g2,.x-g3{grid-template-columns:1fr}
+ .x-flow{grid-template-columns:1fr;gap:28px}
+ .x-stp:not(:last-child):after{right:auto;left:50%;top:auto;bottom:-23px;margin:0 0 0 -10px;border:10px solid transparent;border-top:14px solid var(--org);border-bottom:0;animation:none}
+}
+@media(prefers-reduced-motion:reduce){.x-sum div,.x-stp,.x-stp:after{animation:none!important}}
 </style>
 </head>
 <body>
 <header class="bar">
 <div class="bt">政大 EMBA 戈22</div>
 <nav class="nav" role="tablist" aria-label="選擇要看的頁面">
-<button role="tab" data-g="top">首頁</button><button role="tab" data-g="org">組織圖</button><button role="tab" data-g="goal">團隊目標</button><button role="tab" data-g="cal">行事曆</button><button role="tab" data-g="week">每週訓練時間</button><button role="tab" data-g="video">教學影片</button><button role="tab" data-g="res">照片與 Slogan</button><button role="tab" data-g="line">LINE 宣傳文與 PDF</button>
+<button role="tab" data-g="top">首頁</button><button role="tab" data-g="org">組織圖</button><button role="tab" data-g="goal">團隊目標</button><button role="tab" data-g="cal">行事曆</button><button role="tab" data-g="week">每週訓練時間</button><button role="tab" data-g="video">教學影片</button><button role="tab" data-g="med">醫療保險</button><button role="tab" data-g="res">照片與 Slogan</button><button role="tab" data-g="line">LINE 宣傳文與 PDF</button>
 </nav>
 </header>
 <div class="wrap">
@@ -801,6 +858,73 @@ table.cal.big,.cal.big tbody,.cal.big tr,.cal.big td{display:block;width:auto}
 <a class="ytc" href="https://www.youtube.com/watch?v=HysvWlcF7SY" target="_blank" rel="noopener"><span class="tn"><img src="img/yt/HysvWlcF7SY.jpg" alt="03　如何訓練" loading="lazy"><i>1:39</i></span><b>03　如何訓練</b><span class="sd">熱身、課表、收操，照著 App 做</span></a>
 </div>
 <div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-23</span><span></span></div>
+</section>
+
+<section class="slide" id="med" data-g="med">
+<p class="kicker"><span class="tag2 t-blue">醫療與安全</span>出團保險</p>
+<h2>出團保險須知：在大陸受傷或突發急病，怎麼賠、怎麼申請</h2>
+<div class="x-sum">
+ <div><b>0<small>元</small></b><span>自付門檻，從第一塊錢開始賠</span></div>
+ <div><b>100<small>%</small></b><span>合理醫療費用的給付比例</span></div>
+ <div class="x-lim"><b>5,000<small>元</small></b><span>門診：醫保外自費項目上限</span></div>
+ <div class="x-lim"><b>20,000<small>元</small></b><span>住院：醫保外自費項目上限</span></div>
+</div>
+<p class="x-unit">金額單位是人民幣。兩個上限由「意外」和「急病」共用。醫保外自費項目，是指大陸醫保目錄以外、要自費的藥品與項目。</p>
+
+<h3 class="vh">保什麼</h3>
+<div class="x-g2">
+ <div class="x-cd"><div class="x-ic"><svg class="x-i" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><b class="x-t">意外傷害</b><p>跌倒、扭傷、撞傷這類意外造成的醫療費用。</p></div>
+ <div class="x-cd"><div class="x-ic"><svg class="x-i" viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div><b class="x-t">突發急性病</b><p>出團期間突然發作的急病，就醫的醫療費用。</p></div>
+</div>
+
+<h3 class="vh">就醫時記住三件事</h3>
+<div class="x-g3">
+ <div class="x-cd x-no"><div class="x-ic"><svg class="x-i" viewBox="0 0 24 24"><path d="M4 21V7l8-4 8 4v14M9 21v-5h6v5M12 8v4M10 10h4"/></svg></div><b class="x-t">去對醫院</b><p>要去<mark>二級以上公立醫院的普通部</mark>。</p><p>特需部、國際部不賠。</p></div>
+ <div class="x-cd"><div class="x-ic"><svg class="x-i" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7"/></svg></div><b class="x-t">單據留正本</b><p>發票正本、費用明細清單、病歷都要拿，當場拍照留底。</p></div>
+ <div class="x-cd"><div class="x-ic"><svg class="x-i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><b class="x-t">保險到期還在治療</b><ul><li>住院：賠到出院，最長到事發後第 180 天</li><li>門診：到期後 15 天內</li></ul></div>
+</div>
+
+<h3 class="vh">線上理賠流程<small>自己就醫、自己先付錢的情況</small></h3>
+<div class="x-flow">
+ <div class="x-stp"><span class="x-n">1</span><b>下載 APP</b><p><span class="x-btn">平安好生活</span></p></div>
+ <div class="x-stp"><span class="x-n">2</span><b>登入後報案</b><p>主頁右下角</p><div class="x-path"><span class="x-btn">我的</span><span class="x-nw"><i>→</i> <span class="x-btn">我的理赔</span></span><span class="x-nw"><i>→</i> <span class="x-btn">我要报案</span></span></div></div>
+ <div class="x-stp"><span class="x-n">3</span><b>依提示填寫</b><div class="x-path"><span class="x-btn">案件信息</span><span class="x-nw"><i>→</i> <span class="x-btn">领款信息</span></span><span class="x-nw"><i>→</i> <span class="x-btn">上传资料</span></span></div><p>替別人報案，選 <span class="x-btn">其他</span></p></div>
+ <div class="x-stp x-end"><span class="x-n">4</span><b>結案付款</b><p>3 到 7 個工作日</p></div>
+</div>
+<p class="x-note">按鈕名稱照 APP 畫面上的簡體字寫，方便對照。</p>
+
+<h3 class="vh">要上傳的資料<small>拍照上傳</small></h3>
+<div class="x-g3">
+ <div class="x-cd"><div class="x-ic"><svg class="x-i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c1-2 5-2 6 0M15 10h3M15 14h3"/></svg></div><b class="x-t">每個人都要</b><ul><li>身分證件（護照等，要和投保時用的證件一致）</li><li>本人銀行卡（儲蓄卡，不能用信用卡）</li></ul></div>
+ <div class="x-cd"><div class="x-ic"><svg class="x-i" viewBox="0 0 24 24"><path d="M9 3v6a3 3 0 0 0 6 0V3M12 12v3a4 4 0 0 0 8 0v-1"/><circle cx="20" cy="12" r="2"/></svg></div><b class="x-t">門診</b><ul><li>發票正本</li><li>費用明細清單</li><li>門診病歷（要寫清楚就診情況）</li></ul></div>
+ <div class="x-cd"><div class="x-ic"><svg class="x-i" viewBox="0 0 24 24"><path d="M3 18V8M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="2"/></svg></div><b class="x-t">住院</b><ul><li>發票正本</li><li>費用明細清單</li><li>住院病歷、出院小結（出院後到病案室列印）</li></ul></div>
+</div>
+<p class="x-note">需要補其他資料時，申請後會有理賠專員一對一聯絡。</p>
+
+<h3 class="vh">原文<small>保險公司提供，簡體字照錄</small></h3>
+<details open>
+<summary>保單條款第 5 條：意外傷害醫療</summary>
+<div class="x-orig"><p>5.被保险人因遭受意外伤害事故并在二级及二级以上公立医院普通部（特需、国际部等除外）进行治疗，本公司就其实际支出的合理医疗费用（其中门诊医保外自费项目限额5000元、住院医保外自费项目限额20000元，与突发急性病医疗共用医保外自费限额）超过人民币0元部分按100%的比例给付意外伤害医疗保险金。保险期间届满时被保险人住院治疗仍未结束的，对其自保险期间届满次日起至该被保险人该次住院出院之时或者对应意外发生之日起第一百八十日二十四时（以先发生者为准）期间接受的住院治疗，保险人继续承担旅行意外医疗保险责任；保险期间届满时该被保险人门诊治疗仍未结束的，对其自保险期间届满次日起十五日内接受的门诊治疗，保险人继续承担旅行意外医疗保险责任。</p></div>
+</details>
+<details open>
+<summary>保單條款第 6 條：突發急性病醫療</summary>
+<div class="x-orig"><p>6.本保单扩展《附加突发急性病医疗保险》条款，被保险人因突发急性病并在二级及二级以上公立医院普通部（特需、国际部等除外）进行治疗，本公司就其实际支出的合理医疗费用（其中门诊医保外自费限额5000元、住院医保外自费限额20000元，与意外医疗共用医保外自费限额）超过人民币0元部分按100%的比例给付意外伤害医疗保险金。保险期间届满时被保险人住院治疗仍未结束的，对其自保险期间届满次日起至该被保险人该次住院出院之时或者对应意外发生之日起第一百八十日二十四时（以先发生者为准）期间接受的住院治疗，保险人继续承担旅行意外医疗保险责任；保险期间届满时该被保险人门诊治疗仍未结束的，对其自保险期间届满次日起十五日内接受的门诊治疗，保险人继续承担旅行意外医疗保险责任。</p></div>
+</details>
+<details open>
+<summary>医疗险线上理赔流程及材料</summary>
+<div class="x-orig">
+<p><b>1、被保险人自行就诊，就诊费用无垫付的情况</b></p>
+<p><b>自助理赔流程</b></p>
+<p>下载“平安好生活”APP → 登陆-主页右下角-“我的”-“我的理赔”-吧“我要报案” → 按提示填写“案件信息”-“领款信息”-“上传资料”，若未他人报案，选择“其他” → 3-7个工作日结案支付</p>
+<p><b>上传所需资料（照片）</b></p>
+<p>（1）出险人身份证（护照等，与投保时证件一致）、本人银行卡（储蓄卡，非信用卡）；</p>
+<p>（2）门诊：发票原件、费用明细清单、门诊病历（写清就诊情况）；</p>
+<p>（3）住院：发票原件、费用明细清单、住院病历和出院小结（出院后在病案室打印）；</p>
+<p>（4）如需补充其他资料，在申请理赔后，会有理赔专员 1V1 对接沟通。</p>
+</div>
+</details>
+<p class="note">依保險公司提供的條款第 5、6 條與線上理賠流程圖整理；其他條款與保額以正式保單為準。</p>
+<div class="foot"><span>政大 EMBA 戈22 ｜ 2026-11-25</span><span></span></div>
 </section>
 
 <section class="slide" id="res" data-g="res">
